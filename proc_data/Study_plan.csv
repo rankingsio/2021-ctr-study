@@ -1,0 +1,61 @@
+Sample,City,Keyword,Baseline City Daily Searches for the Keyword,Ahref ranking,Ranking CTR Factor ,Estimated Daily Clicks,Multiplier,Number of Daily Searchs on SERP Empire
+1,San Antonio,San Antonio car accident lawyer,24,8,0.0105,0.25,30,8
+2,San Antonio,San Antonio car accident lawyer,24,13,0.0087,0.21,30,6
+3,San Antonio,San Antonio car accident lawyer,24,27,0.0025,0.06,30,2
+4,Los Angeles,Los Angeles car accident lawyer,147,4,0.0412,6.04,30,181
+5,Los Angeles,Los Angeles car accident lawyer,147,13,0.0087,1.28,30,38
+6,Los Angeles,Los Angeles car accident lawyer,147,23,0.0025,0.37,30,11
+7,Brooklyn,Brooklyn car accident lawyer,33,5,0.0183,0.61,30,18
+8,Brooklyn,Brooklyn car accident lawyer,33,13,0.0087,0.29,30,9
+9,Brooklyn,Brooklyn car accident lawyer,33,26,0.0025,0.08,30,3
+10,Miami,Miami car accident lawyer,63,9,0.0101,0.64,30,19
+11,Miami,Miami car accident lawyer,63,12,0.0102,0.65,30,19
+12,Miami,Miami car accident lawyer,63,29,0.0025,0.16,30,5
+13,Houston,Houston car accident lawyer,180,9,0.0101,1.82,30,55
+14,Houston,Houston car accident lawyer,180,11,0.011,1.98,30,59
+15,Houston,Houston car accident lawyer,180,23,0.0025,0.45,30,14
+16,Chicago,Chicago car accident lawyer,43,3,0.0521,2.26,30,68
+17,Chicago,Chicago car accident lawyer,43,15,0.0062,0.27,30,8
+18,Chicago,Chicago car accident lawyer,43,26,0.0025,0.11,30,3
+19,Dallas,Dallas car accident lawyer,43,8,0.0105,0.46,30,14
+20,Dallas,Dallas car accident lawyer,43,20,0.0025,0.11,30,3
+21,Dallas,Dallas car accident lawyer,43,28,0.0025,0.11,30,3
+22,Minneapolis,Minneapolis car accident lawyer,120,5,0.0183,2.20,30,66
+23,Minneapolis,Minneapolis car accident lawyer,120,15,0.0062,0.74,30,22
+24,Minneapolis,Minneapolis car accident lawyer,120,25,0.0025,0.30,30,9
+25,Las Vegas,Las Vegas car accident lawyer,63,4,0.0412,2.61,30,78
+26,Las Vegas,Las Vegas car accident lawyer,63,16,0.0056,0.35,30,11
+27,Las Vegas,Las Vegas car accident lawyer,63,29,0.0025,0.16,30,5
+28,Orlando,Orlando car accident lawyer,20,2,0.0888,1.75,30,52
+29,Orlando,Orlando car accident lawyer,20,20,0.0025,0.05,30,1
+30,Orlando,Orlando car accident lawyer,20,30,0.0025,0.05,30,1
+31,Tampa,Tampa car accident lawyer,33,9,0.0101,0.34,30,10
+32,Tampa,Tampa car accident lawyer,33,15,0.0062,0.21,30,6
+33,Tampa,Tampa car accident lawyer,33,27,0.0025,0.08,30,3
+34,Kansas City,Kansas City car accident lawyer,11,8,0.0105,0.11,30,3
+35,Kansas City,Kansas City car accident lawyer,11,18,0.0048,0.05,30,2
+36,Kansas City,Kansas City car accident lawyer,11,25,0.0025,0.03,30,1
+37,Austin,Austin car accident lawyer,33,3,0.0521,1.74,30,52
+38,Austin,Austin car accident lawyer,33,16,0.0056,0.19,30,6
+39,Austin,Austin car accident lawyer,33,25,0.0025,0.08,30,3
+40,Nashville,Nashville car accident lawyer,11,7,0.0129,0.14,30,4
+41,Nashville,Nashville car accident lawyer,11,15,0.0062,0.07,30,2
+42,Nashville,Nashville car accident lawyer,11,24,0.0025,0.03,30,1
+43,Baltimore,Baltimore car accident lawyer,24,7,0.0129,0.31,30,9
+44,Baltimore,Baltimore car accident lawyer,24,18,0.0048,0.12,30,3
+45,Baltimore,Baltimore car accident lawyer,24,29,0.0025,0.06,30,2
+46,Queens,Queens car accident lawyer,7,3,0.0521,0.36,30,11
+47,Queens,Queens car accident lawyer,7,15,0.0062,0.04,30,1
+48,Queens,Queens car accident lawyer,7,24,0.0025,0.02,30,1
+49,Fresno,Fresno car accident lawyer,16,6,0.0153,0.24,30,7
+50,Fresno,Fresno car accident lawyer,16,14,0.0076,0.12,30,4
+51,Fresno,Fresno car accident lawyer,16,25,0.0025,0.04,30,1
+52,Charleston,Charleston car accident lawyer,5,4,0.0412,0.19,30,6
+53,Charleston,Charleston car accident lawyer,5,13,0.0087,0.04,30,1
+54,Charleston,Charleston car accident lawyer,5,22,0.0025,0.01,30,1
+55,Denver,Denver car accident lawyer,33,9,0.0101,0.34,30,10
+56,Denver,Denver car accident lawyer,33,12,0.0102,0.34,30,10
+57,Denver,Denver car accident lawyer,33,23,0.0025,0.08,30,3
+58,Boston,Boston car accident lawyer,16,10,0.0108,0.17,30,5
+59,Boston,Boston car accident lawyer,16,15,0.0062,0.10,30,3
+60,Boston,Boston car accident lawyer,16,29,0.0025,0.04,30,1

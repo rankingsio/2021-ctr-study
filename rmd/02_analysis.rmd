@@ -149,11 +149,7 @@ r_col <- "#D21D5C"
 
 ```{r data_loading}
 
-results <- rio::import(here::here("proc_data", "proc_data.rds")) %>%
-  mutate(
-    City = forcats::as_factor(City),
-    date = lubridate::ymd(date)
-  )
+results <- rio::import(here::here("proc_data", "proc_data.rds")) 
 
 
 

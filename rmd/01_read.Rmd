@@ -22,7 +22,13 @@ proc_data <- raw_data %>%
   # we remove sample 6 because it was not found by Serp Empire for most of the study duration
   filter(Sample_ID != 6) %>%
   # we pivot the data to longer format to get tidy data:
-  pivot_longer(cols = starts_with("2021-0"), names_to = "date", values_to = "rank") 
+  pivot_longer(cols = starts_with("2021-0"), names_to = "date", values_to = "rank") %>%
+  mutate(
+    City = forcats::as_factor(City),
+    date = lubridate::ymd(date)
+  )
+glimpse(proc_data)
+summary(proc_data)
 
 ```
 

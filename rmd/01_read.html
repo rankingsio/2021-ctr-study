@@ -184,7 +184,36 @@ pre code {
   # we remove sample 6 because it was not found by Serp Empire for most of the study duration
   filter(Sample_ID != 6) %&gt;%
   # we pivot the data to longer format to get tidy data:
-  pivot_longer(cols = starts_with(&quot;2021-0&quot;), names_to = &quot;date&quot;, values_to = &quot;rank&quot;) </code></pre>
+  pivot_longer(cols = starts_with(&quot;2021-0&quot;), names_to = &quot;date&quot;, values_to = &quot;rank&quot;) %&gt;%
+  mutate(
+    City = forcats::as_factor(City),
+    date = lubridate::ymd(date)
+  )
+glimpse(proc_data)</code></pre>
+<pre><code>## Rows: 1,888
+## Columns: 5
+## $ Sample_ID          &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ City               &lt;fct&gt; San Antonio, San Antonio, San Antonio, San Antonio,…
+## $ Initial_Ahref_rank &lt;int&gt; 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, …
+## $ date               &lt;date&gt; 2021-03-05, 2021-03-06, 2021-03-07, 2021-03-08, 20…
+## $ rank               &lt;int&gt; 7, 11, 9, 10, 10, 12, 9, 7, 7, 6, 12, 15, 15, 14, 1…</code></pre>
+<pre class="r"><code>summary(proc_data)</code></pre>
+<pre><code>##    Sample_ID              City      Initial_Ahref_rank      date           
+##  Min.   : 1.00   San Antonio:  96   Min.   : 2.00      Min.   :2021-03-05  
+##  1st Qu.:16.00   Brooklyn   :  96   1st Qu.: 8.00      1st Qu.:2021-03-12  
+##  Median :31.00   Miami      :  96   Median :15.00      Median :2021-03-20  
+##  Mean   :30.92   Houston    :  96   Mean   :15.56      Mean   :2021-03-20  
+##  3rd Qu.:46.00   Chicago    :  96   3rd Qu.:24.00      3rd Qu.:2021-03-28  
+##  Max.   :60.00   Dallas     :  96   Max.   :30.00      Max.   :2021-04-05  
+##                  (Other)    :1312                                          
+##       rank      
+##  Min.   : 1.00  
+##  1st Qu.: 8.00  
+##  Median :15.00  
+##  Mean   :15.65  
+##  3rd Qu.:22.00  
+##  Max.   :34.00  
+##  NA&#39;s   :34</code></pre>
 <pre class="r"><code>saveRDS(proc_data, file = here::here(&quot;proc_data&quot;, &quot;proc_data.rds&quot;))</code></pre>
 
 

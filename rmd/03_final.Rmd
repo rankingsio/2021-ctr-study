@@ -6,9 +6,12 @@ output:
   html_document:
     theme: paper
     highlight: kate
-    code_folding: hide
+    # code_folding: hide
+    toc: true
     toc_depth: 3
     toc_float: true
+    number_sections: true
+    keep_md: true # keep the intermediary files, including the plots as .png
 editor_options:
   chunk_output_type: console
 ---
@@ -16,32 +19,32 @@ editor_options:
 
 <style>
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: #D21D5C;
-  border-color: #D21D5C;
+background-color: #D21D5C;
+border-color: #D21D5C;
 }
 
 body {
-  font-family: 'Alegreya Sans', sans-serif;
-  color: #333333;
-  font-size: 14px;
+font-family: 'Alegreya Sans', sans-serif;
+color: #333333;
+font-size: 17px;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 28px;
+font-weight: bold;
+font-size: 28px;
 }
 
 h1.title {
-  font-size: 30px;
-  color: #111111;
+font-size: 30px;
+color: #111111;
 }
 
 h2 {
-  font-size: 24px;
+font-size: 24px;
 }
 
 h3 {
-  font-size: 18px;
+font-size: 18px;
 }
 </style>
 
@@ -57,7 +60,7 @@ knitr::knit_hooks$set(inline = function(x) {
 #     here::here("plots", "png", paste0(make.names(item), ".png")))
 #   } 
 
-required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel")
+required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel", "ggiraph")
 # required_packages <- c("tidyverse", "readxl", "ggthemes", "hrbrthemes", "extrafont", "plotly", "scales", "stringr", "gganimate", "here", "tidytext", "sentimentr", "scales", "DT", "here", "sm", "mblm", "glue", "fs", "knitr", "rmdformats", "janitor", "urltools", "colorspace", "pdftools", "showtext")
 
 for(i in required_packages) { 
@@ -128,9 +131,22 @@ num_format <- scales::format_format(big.mark = ",", small.mark = ",", scientific
 
 
 
+# LOADING THE DATA:
+results <- rio::import(here::here("proc_data", "proc_data.rds")) 
+study_plan <- rio::import(here::here("proc_data", "Study_plan.csv"))
+SERP_features <- rio::import(here::here("proc_data", "SERP_features.csv"))
+
+# we merge the study plan with the results to add the info about the city:
+results <- results %>% 
+  left_join(study_plan %>% select(Sample_ID = Sample, City)) %>%
+  rowwise() %>%
+  mutate(label = paste0("Sample ", Sample_ID, ", ", City))
+
+
+
 ```
 
-# 1 Introduction 
+# Introduction 
 
 In this study, we want to test for the effect of increasing [Click-Through Rates](https://support.google.com/google-ads/answer/2615875?hl=en) (CTRs) on Google Search rankings.  
 We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increase the number of visits to randomly selected car accident lawyers' websites with a service provider and measure the impact on the rankings.  
@@ -143,13 +159,17 @@ The goals of this project are:
 2. To test if using a provider of organic traffic to increase your SEO (by increasing your CTR), in the particular case of personal injury lawyers, is effective. 
 
 
-# 2 Methodology
+# Methodology
 
 ## Overview
 
 We register with [SERP Empire](https://www.serpempire.com), a current hype organic traffic provider. We launch a campaign for 60 selected personal injury lawyer's websites. Each campaign is "artificially" boosting the number of searches and clicks for the keyword “[_city_] car accident lawyer”. By doing so, we increase their CTR for a duration of 30 days. 
 
-We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website over the course of the study to assess the strength of the effect and effectiveness of using a traffic provider.
+We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website over the course of the study to assess the strength of the effect and effectiveness of using a traffic provider.  
+
+One of the major caveat of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost. We rely on the Google Search ranking provided by SERP Empire to assess its own efficacy.    
+
+Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting ranking.   
 
 ## In More Details
 
@@ -163,71 +183,149 @@ We want to give each website a comparable boost in visits, and a boost that look
 
 Therefore, we calibrate the boost in visits to an _estimated number of daily visits_ for each website. Here is how we do it: 
 
-1. We multiply the _average number of daily searches_ in a city for the keywords “[_city_] car accident lawyer” by the expected CTR of the website, computed from is Google search ranking (provided by Ahref) to a _ranking CTR factor_ (provided by the [Google Organic CTR History](https://www.advancedwebranking.com/ctrstudy/) of Advanced Web Ranking). This _ranking CTR factor_ provides an estimation of the CTR in function of the position in the Google Search results. Indeed, a website ranking first is much more likely to be visited than a website ranking lower. By doing so, we get the number of _estimated daily visits_.  
+1. We multiply the _average number of daily searches_ in a city for the keywords “[_city_] car accident lawyer”, computed from the monthly volume on Google Ads, to the expected CTR of the website, computed from is Google search ranking (provided by Ahref) to a _ranking CTR factor_ (provided by the [Google Organic CTR History](https://www.advancedwebranking.com/ctrstudy/) of Advanced Web Ranking). This _ranking CTR factor_ provides an estimation of the CTR in function of the position in the Google Search results. Indeed, a website ranking first is much more likely to be visited than a website ranking lower. By doing so, we get the number of _estimated daily visits_.  
 
 2. Then, we multiply the _estimated daily visits_ to a common _multiplier_, this is the "boost", to obtain the calibrated number of daily keywords searches that we will add to each website with SERP Empire.
 
 In short, for each website:
 
-1. $\text{ Ranking CTR factor } * \text{ Daily Searches for keyword in city } = \text{ Estimated Daily Visits }$
-2. $\text{ Estimated Daily Visits } * Multiplier = \text{ Daily Keyword Searches }$
+1. $\text{Ranking CTR factor} * \text{Daily Searches for keyword in city} = \text{Estimated Daily Visits}$
+2. $\text{Estimated Daily Visits} * Multiplier = \text{Daily Keyword Searches}$
 
 Where:   
 
 * $\text{Ranking CTR factor} = \text{current ranking} * \text{CTR estimate from Google Organic CTR History study}$.  
+* ${Daily Searches for keyword in city}$ is computed from Google Ads monthly volume for the keyword "[_city_] car accident lawyer"
 * $\text{CTR estimate from Google Organic CTR History study}$ is the obtained from the _Organic + Local Pack_ ([source](https://www.advancedwebranking.com/ctrstudy/)) and is:  
 
 ```{r}
-SERP_features <- rio::import(here::here("proc_data", "SERP_features.csv"))
 SERP_features %>%
   kbl(align=rep('c', 2)) %>%
   kable_classic(full_width = F, font = 10)
-  # kable_styling(bootstrap_options = "condensed")
+# kable_styling(bootstrap_options = "condensed")
 ```
 
 * The $Multiplier$ is the how much we multiply the $\text{Estimated Daily Visits}$: 30.  
 
+This is the study plan:  
 
-### SERP Empire
+```{r}
+study_plan %>%
+  kbl(align=rep('c', 2)) %>%
+  kable_classic(full_width = F, font = 10) %>%
+  column_spec(2:4, background = "#FAFAFA") %>%
+  column_spec(7:9, background = "#FAFAFA")
 
-- a campaign from eaach -> boost their estimiated daily visits by 30
-- but SERP settings to make the traffic looks organic.
-
-
-
-
-...
-
-----
-
-
-##### Step 1 xxxx
-
-##### Step 2 Data Mining
-
-##### Step 3 Data Enrichment
-
-##### Step 4 Data Analysis
-should be filled out by you; here explanation about which models have been used etc. 
-
-#### Overview of the data
-here basic overview of the data set (missing values, number of observations, number of variables, etc.). Plots/tables can be used for that purpose
-
-# 3 Research Findings 
-
-# X Annex
-
-
-
-```{r name_plot, include=FALSE, echo=FALSE}
-  # knitr::include_graphics(here::here("plots", "png", "name_example.png"))
 ```
 
-```{r name_table, include=FALSE, echo=FALSE}
-#   title_description_table <- read.csv(here::here("plots", "csv", "name_example_table.csv"), stringsAsFactors=F)
-# knitr::kable(title_description_table, caption = "Basic information about XXX")
+How to read the study plan, for instance for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend onn the ranking, to obtain the _estimated number of daily click_ for the sample 1. We multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website everyday.  
+
+### SERP Empire Parameters
+
+We use the traffic provider SERP Empire to visits our 60 sampled websites the number of day indicated in the column _Number of Daily Searchs on SERP Empire_ on the study plan above. To make the traffic look more organic, SERP Empire bots will vary their exact number of visits around this average.  
+
+In addition, we use the following SERP Empire parameters:  
+
+* The country and region are specified
+* 50% of mobile searches
+* 2 pages per session
+* Average session duration: 60 seconds
+* Bounce Rate: 50%
+
+We boost the daily visits of the websites for 1 month.  
+
+
+### Data Collection and Quality
+
+From the SERP Empire dashboard, we manually collect the rank of each 60 website everyday.  
+
+A few comment on the data quality:   
+
+* Sample number 6 is removed from the analysis as the website could not be found by SERP Empire anymore for the majoritty of the study (from 2021-03-14).  
+* There are a few websites who could not easily be found by SERP Empire, and needed to be modified. Thus, there are a few missing days at the beginning of the month for some samples.   
+* The initial ranking obtained from Ahrefs and that determined the CTR ranking factor is sometimes a bit different that the ranking on SERP Empire, which is to be expected. Nevertheless it is quite similar (it explains for instance why some websites ranked above the position 30).  
+* We boost the visits for one keyword only: "[_city_] car accident lawyer”
+
+
+
+# Research Findings 
+
+## Rankinng Over Time
+
+We start by visualizing the evolution of the rank of the 60 websites. Each line represent the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a loess regression with standard error and represent a smoothed average, similar to a moving average.  
+
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+all_ranks_over_time <- results %>%
+  ggplot() +
+  # geom_line(aes(x=date, y=rank, group=Sample_ID), alpha = 0.8) +
+  geom_line_interactive(aes(x = date,
+                            y = rank,
+                            group = Sample_ID,
+                            tooltip = label,
+                            data_id = label)
+  ) +
+  geom_smooth(aes(x=date, y=rank),
+              color = r_col,
+              size = 1,
+              se = TRUE) +
+  # geom_line(data = results %>% group_by(date) %>% summarize(avg = mean(rank, na.rm = TRUE)),
+  #           aes(x=date, y=avg),
+  #           color = r_col,
+  #           size = 2) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  scale_x_date(
+    breaks = c(min(results$date), "2021-03-12", "2021-03-12", "2021-03-19",
+               "2021-03-26", "2021-04-02", max(results$date)),
+    date_labels = "%d %b"
+    # date_breaks = "1 week",
+    # date_minor_breaks = "1 day"
+  ) +
+  labs(
+    title = "Ranking Over Time" ,
+    subtitle = "Ranking of all samples over time and a smoothed average (loess regression) in pink.\nHover on a line to highlight the evolution of a particular website."
+  ) +
+  xlab("Date") +
+  ylab("Rank")
+
+girafe(ggobj = all_ranks_over_time,
+       options = list(
+         opts_hover_inv(css = "opacity:0.1;"),
+         opts_hover(css = "stroke-width:2;")
+       )
+)
+
 ```
 
+We observe the following: 
+
+* There is variability in the ranking of the websites, which will blurry the picture.
+* Some websites did see an increase in their ranking over the month, other a decrease.  
+* The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not dramatic. It seems to be around +2 positions.
+* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking is less and a bit more stabilized. Could 2 weeks be the time it has needed for the Google algorithm to capture and adjust to the boost in visits?   
+
+## Comparing First Week to Last Week
+
+As we saw previously that there is variability in the ranking, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study.  
+
+
+--- one slopegraph here with the average, where you can hover.
+
+```{r}
+
+```
+
+
+--- and three static slopegraphs here with the page in black, it's average, and the rest in pink. 
+
+```{r}
+
+```
+
+
+
+# Annex
 
 
 
