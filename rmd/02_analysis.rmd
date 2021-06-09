@@ -1,6 +1,6 @@
 ---
-title: "[Add study name]"
-author: ""
+title: "CTR-study_Rankings-io"
+author: "Francois Delavy"
 date: "Last updated on `r Sys.Date()`"
 output:
   html_document:
@@ -8,7 +8,7 @@ output:
     highlight: kate
     code_folding: hide
     toc: true
-    toc_depth: 3
+    toc_depth: 2
     toc_float: true
 editor_options: 
   chunk_output_type: console
@@ -17,32 +17,32 @@ editor_options:
 
 <style>
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: #00d188;
-  border-color: #00d188;
+background-color: #00d188;
+border-color: #00d188;
 }
 
 body {
-  font-family: montserrat;
-  color: #444444;
-  font-size: 14px;
+font-family: 'Alegreya Sans', sans-serif;
+color: #333333;
+font-size: 14px;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 28px;
+font-weight: bold;
+font-size: 28px;
 }
 
 h1.title {
-  font-size: 30px;
-  color: #00d188;
+font-size: 30px;
+color: #00d188;
 }
 
 h2 {
-  font-size: 24px;
+font-size: 24px;
 }
 
 h3 {
-  font-size: 18px;
+font-size: 18px;
 }
 </style>
 
@@ -55,7 +55,7 @@ knitr::knit_hooks$set(inline = function(x) {
 })
 
 Sys.setlocale("LC_TIME", "C")
-extrafont::loadfonts(device = "win")
+# extrafont::loadfonts(device = "win")
 ```
 
 
@@ -63,167 +63,287 @@ extrafont::loadfonts(device = "win")
 ```{r prep}
 ## packages: remove or add your necessary packages
 
-required_packages <- c("tidyverse", "readxl", "ggthemes", "hrbrthemes", "extrafont", "plotly", "scales", "stringr", "gganimate", "here", "tidytext", "sentimentr", "scales", "DT", "here", "sm", "mblm", "glue", "fs", "knitr", "rmdformats", "janitor", "urltools", "colorspace", "pdftools", "showtext")
+# required_packages <- c("tidyverse", "readxl", "ggthemes", "hrbrthemes", "extrafont", "plotly", "scales", "stringr", "gganimate", "here", "tidytext", "sentimentr", "scales", "DT", "here", "sm", "mblm", "glue", "fs", "knitr", "rmdformats", "janitor", "urltools", "colorspace", "pdftools", "showtext")
+
+required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel")
 
 for(i in required_packages) { 
-if(!require(i, character.only = T)) {
+  if(!require(i, character.only = T)) {
+    
+    #  if package is not existing, install then load the package
+    install.packages(i, dependencies = T)
+    require(i, character.only = T)
+  }
+}
 
-  #  if package is not existing, install then load the package
-install.packages(i, dependencies = T)
-require(i, character.only = T)
-}
-}
 
 
 ## save plots?
-save <- TRUE
+save <- FALSE
 #save <- FALSE
 
 ## quality of png's
 dpi <- 750
 
-## font adjust; please adjust to client´s website
-#extrafont::loadfonts(device = "win", quiet = TRUE)
-#font_add_google("Montserrat", "Montserrat")
-# font_add_google("Overpass", "Overpass")
-# font_add_google("Overpass Mono", "Overpass Mono")
-
-
 
 ## theme updates; please adjust to client´s website
-#theme_set(ggthemes::theme_clean(base_size = 15))
-theme_set(ggthemes::theme_clean(base_size = 15, base_family = "Montserrat"))
 
+base_size = 10
 
-theme_update(plot.margin = margin(30, 30, 30, 30),
-             plot.background = element_rect(color = "white",
-                                            fill = "white"),
-             plot.title = element_text(size = 20,
-                                       face = "bold",
-                                       lineheight = 1.05,
-                                       hjust = .5,
-                                       margin = margin(10, 0, 25, 0)),
-             plot.title.position = "plot",
-             plot.caption = element_text(color = "grey40",
-                                         size = 9,
-                                         margin = margin(20, 0, -20, 0)),
-             plot.caption.position = "plot",
-             axis.line.x = element_line(color = "black",
-                                        size = .8),
-             axis.line.y = element_line(color = "black",
-                                        size = .8),
-             axis.title.x = element_text(size = 16,
-                                         face = "bold",
-                                         margin = margin(t = 20)),
-             axis.title.y = element_text(size = 16,
-                                         face = "bold",
-                                         margin = margin(r = 20)),
-             axis.text = element_text(size = 11,
-                                      color = "black",
-                                      face = "bold"),
-             axis.text.x = element_text(margin = margin(t = 10)),
-             axis.text.y = element_text(margin = margin(r = 10)),
-             axis.ticks = element_blank(),
-             panel.grid.major.x = element_line(size = .6,
-                                               color = "#eaeaea",
-                                               linetype = "solid"),
-             panel.grid.major.y = element_line(size = .6,
-                                               color = "#eaeaea",
-                                               linetype = "solid"),
-             panel.grid.minor.x = element_line(size = .6,
-                                               color = "#eaeaea",
-                                               linetype = "solid"),
-             panel.grid.minor.y = element_blank(),
-             panel.spacing.x = unit(4, "lines"),
-             panel.spacing.y = unit(2, "lines"),
-             legend.position = "top",
-             legend.title = element_text(family = "Montserrat",
-                                         color = "black",
-                                         size = 14,
-                                         margin = margin(5, 0, 5, 0)),
-             legend.text = element_text(family = "Montserrat",
-                                        color = "black",
-                                        size = 11,
-                                        margin = margin(4.5, 4.5, 4.5, 4.5)),
-             legend.background = element_rect(fill = NA,
-                                              color = NA),
-             legend.key = element_rect(color = NA, fill = NA),
-             #legend.key.width = unit(5, "lines"),
-             #legend.spacing.x = unit(.05, "pt"),
-             #legend.spacing.y = unit(.55, "pt"),
-             #legend.margin = margin(0, 0, 10, 0),
-             strip.text = element_text(face = "bold",
-                                       margin = margin(b = 10)))
+my_theme <- function(){
+  theme_minimal() +
+    theme(
+      plot.margin = margin(30, 30, 30, 30),
+      plot.background = element_rect(color = "white",
+                                     fill = "white"),
+      plot.title = element_text(size = 1.4 * base_size),
+      plot.title.position = "plot",
+      plot.subtitle = element_text(size = base_size),
+      plot.caption = element_text(color = "grey40",
+                                  size = 0.9 * base_size),
+      plot.caption.position = "plot",
+      axis.line.x = element_line(color = "black",
+                                 size = .8),
+      axis.line.y = element_line(color = "black",
+                                 size = .8),
+      axis.title.x = element_text(size =  base_size,
+                                  face = "bold"),
+      axis.title.y = element_text(size = base_size,
+                                  face = "bold"),
+      axis.text = element_text(size = 0.9 * base_size,
+                               color = "black",
+                               face = "bold"),
+      # axis.ticks = element_blank(),
+      axis.ticks = element_line(color = "black"),
+      panel.grid.major.x = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.major.y = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.minor.x = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.minor.y = element_blank(),
+      panel.spacing.x = unit(2, "lines"),
+      panel.spacing.y = unit(1, "lines")
+    )
+}
 
-## theme settings for flipped plots
-theme_flip <-
-  theme(panel.grid.minor.x = element_blank(),
-        panel.grid.minor.y = element_line(size = .6,
-                                          color = "#eaeaea"))
-
-## theme settings for maps
-theme_map <- 
-  theme_void(base_family = "Montserrat") +
-  theme(legend.direction = "horizontal",
-        legend.box = "horizontal",
-        legend.margin = margin(10, 10, 10, 10),
-        legend.title = element_text(size = 17, 
-                                    face = "bold"),
-        legend.text = element_text(color = "grey33",
-                                   size = 12),
-        plot.margin = margin(15, 5, 15, 5),
-        plot.title = element_text(face = "bold",
-                                  size = 20,
-                                  hjust = .5,
-                                  margin = margin(30, 0, 10, 0)),
-        plot.subtitle = element_text(face = "bold",
-                                     color = "grey33",
-                                     size = 17,
-                                     hjust = .5,
-                                     margin = margin(10, 0, -30, 0)),
-        plot.caption = element_text(size = 14,
-                                    color = "grey33",
-                                    hjust = .97,
-                                    margin = margin(-30, 0, 0, 0)))
 
 ## numeric format for labels
 num_format <- scales::format_format(big.mark = ",", small.mark = ",", scientific = F)
 
-## main color backlinko
-bl_col <- "#00d188"
-bl_dark <- darken(bl_col, .3, space = "HLS")
+## main colors rankings.io
+r_col <- "#D21D5C"
 
-## colors + labels for interval stripes
-int_cols <- c("#bce2d5", "#79d8b6", bl_col, "#009f66", "#006c45", "#003925")
-int_perc <- c("100%", "95%", "75%", "50%", "25%", "5%")
 
-## colors for degrees (Bachelors, Massters, Doctorate in reverse order)
-cols_degree <- c("#e64500", "#FFCC00", darken(bl_col, .1))
-
-## gradient colors for position
-colfunc <- colorRampPalette(c(bl_col, "#bce2d5"))
-pos_cols <- colfunc(10)
 ```
 
-# load data
 
+
+
+
+# Load data
+
+
+```{r data_loading}
+
+results <- rio::import(here::here("proc_data", "proc_data.rds")) %>%
+  mutate(
+    City = forcats::as_factor(City),
+    date = lubridate::ymd(date)
+  )
+
+
+
+```
+
+
+# Data exploration
 
 
 ```{r}
 
-# 1 saving plots in pdf with example
+glimpse(results)
 
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color= drv)) + 
-     geom_smooth(mapping = aes(linetype = drv), method = 'loess') +
-     geom_point()
+```
+
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+results %>%
+  ggplot() +
+  geom_line(aes(x=date, y=rank, group=Sample_ID)) +
+  # geom_smooth(aes(x=date, y=rank)) +
+  geom_line(data = results %>% group_by(date) %>% summarize(avg = mean(rank, na.rm = TRUE)),
+            aes(x=date, y=avg),
+            color = r_col,
+            size = 2) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  scale_x_date(
+    breaks = c(min(results$date), "2021-03-12", "2021-03-12", "2021-03-19",
+               "2021-03-26", "2021-04-02", max(results$date)),
+    date_labels = "%d %b"
+    # date_breaks = "1 week",
+    # date_minor_breaks = "1 day"
+  ) +
+  labs(
+    title = "Ranking Over Time" ,
+    subtitle = "Ranking of all samples over time and their average in pink."
+  )
 
 if(save == T){ 
-  ggsave(here::here("plots", "name_plot.pdf"), name_plot, 
+  ggsave(here::here("plots", "all_over_time.pdf"), name_plot, 
          width = 12.5, height = 8, device = cairo_pdf)
 }
 
-# 2 pdfs will then be converted into the pngs using the 04_convert_pdfs_to_pngs.rmd file. 
 ```
+
+* Chaotic start, bump in the middle after 2 weeks, stabilization
+* No large, clear, and major effect
+* Need to average position for a few days to get stable estimate because variability ad missing values at the start.  
+
+# Key Figures
+
+## Average Ranking Improvement
+
+```{r}
+
+# average rank of first five days:
+avg_start_1w <- results %>% filter(date < "2021-03-12") %>% 
+  # first the first week average by sample:
+  group_by(Sample_ID) %>% 
+  summarize(avg = mean(rank, na.rm = TRUE)) %>% 
+  # then the average of the samples:
+  ungroup() %>%
+  summarize(avg = mean(avg)) %>%
+  as.numeric()
+
+# average rank of last five days:
+avg_end_1w <- results %>% filter(date > "2021-03-29") %>% 
+  # first the first week average by sample:
+  group_by(Sample_ID) %>% 
+  summarize(avg = mean(rank, na.rm = TRUE)) %>% 
+  # then the average of the samples:
+  ungroup() %>%
+  summarize(avg = mean(avg)) %>%
+  as.numeric()
+
+rank_gain = avg_start_1w - avg_end_1w
+
+
+```
+
+On average, the law firms gained `r round(rank_gain, 1)` ranks over the month (average of first week - average of last week).  
+
+```{r, fig.align='center', fig.height=6, out.width='80%'}
+
+all_avg_start_1w <- results %>% 
+  filter(date < "2021-03-12") %>%
+  group_by(Sample_ID) %>% 
+  summarise(`First Week` = mean(rank, na.rm = TRUE))
+all_avg_end_1w <- results %>% 
+  filter(date > "2021-03-29") %>%
+  group_by(Sample_ID) %>% 
+  summarise(`Last Week` = mean(rank, na.rm = TRUE))
+
+all_avg_wide = all_avg_start_1w %>% 
+  left_join(all_avg_end_1w, by = "Sample_ID") %>%
+  mutate(
+    start_page = case_when(
+      `First Week` <= 10 ~ 1,
+      `First Week` > 10 &`First Week` <= 20 ~ 2,
+      `First Week` > 20 ~ 3
+    )
+  )
+all_avg_long <- all_avg_wide %>%
+  pivot_longer(cols = c(2:3), names_to = "Week", values_to = "Average Rank")
+
+
+
+# a slopegraph
+ggplot(data = all_avg_long) +
+  geom_line(aes(x = Week, y = `Average Rank`, group = Sample_ID)) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  labs(
+    title = "Average Rank in First and Last Week",
+    subtitle = "Pink: overall average\nGreen: average of those who started on first page\nOrange: average of those who started on second page\nRed: average of those who started on third (and fourth) page"
+  ) +
+  # average:
+  geom_line(
+    data = all_avg_long %>% group_by(Week) %>% summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, group = 1),
+    color = r_col,
+    size = 1
+  ) + geom_label_repel(
+    data = all_avg_long %>% group_by(Week) %>% summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, label = as.character(round(avg,1))), 
+    size = 3, color = r_col
+  ) + 
+  # average of those started on first page:
+  geom_line(
+    data = all_avg_long %>% filter(start_page == 1) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, group = 1),
+    color = "green",
+    size = 1
+  ) + geom_label_repel(
+    data = all_avg_long %>% filter(start_page == 1) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, label = as.character(round(avg,1))), 
+    size = 3, color = "green"
+  ) + 
+  # average of those started on 2nd page:
+  geom_line(
+    data = all_avg_long %>% filter(start_page == 2) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, group = 1),
+    color = "orange",
+    size = 1
+  ) + geom_label_repel(
+    data = all_avg_long %>% filter(start_page == 2) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, label = as.character(round(avg,1))), 
+    size = 3, color = "orange"
+  ) + 
+  # average of those started on 3rd (and 4th) page:
+  geom_line(
+    data = all_avg_long %>% filter(start_page == 3) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, group = 1),
+    color = "red",
+    size = 1
+  ) + geom_label_repel(
+    data = all_avg_long %>% filter(start_page == 3) %>% group_by(Week) %>% 
+      summarise(avg = mean(`Average Rank`)),
+    aes(x = Week, y = avg, label = as.character(round(avg,1))), 
+    size = 3, color = "red"
+  )
+
+
+```
+
+* Different fate for the law firms. In particular two are plunging.
+* No apparent difference in behavior in function of their start rank. Apparently a bit easier to improve if starting from lower rank. 
+
+
+A *paired t-test* comparing the average ranking of each law firm during the first week and last week *shows that the difference is statistically significant*. We reject the null hypothesis that the difference in mean between the first week and last week in zero in favor of the alternative hypothesis: true difference in means is not equal to 0.  
+
+```{r, echo = TRUE}
+
+t.test(all_avg_wide$`First Week`,
+       all_avg_wide$`Last Week`,
+       paired=TRUE)
+
+```
+
+
+# Conclusions
+* Improvement on average of 2 ranks in 1 month. Statistically significant improvement. 
+* Rather small improvement in ranking.
+
 
 
 

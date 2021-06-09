@@ -3,3 +3,32 @@ title: "Data Cleaning and Preparation"
 output: html_document
 ---
 
+```{r setup, echo = TRUE}
+
+library(tidyverse)
+library(here)
+
+```
+
+```{r data}
+
+raw_data <- rio::import(here::here("raw_data", "results.csv"))
+
+```
+
+```{r cleaning}
+
+proc_data <- raw_data %>%
+  # we remove sample 6 because it was not found by Serp Empire for most of the study duration
+  filter(Sample_ID != 6) %>%
+  # we pivot the data to longer format to get tidy data:
+  pivot_longer(cols = starts_with("2021-0"), names_to = "date", values_to = "rank") 
+
+```
+
+```{r save}
+
+saveRDS(proc_data, file = here::here("proc_data", "proc_data.rds"))
+
+```
+

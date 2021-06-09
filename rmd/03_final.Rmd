@@ -1,6 +1,6 @@
 ---
-title: "[Study name]"
-author: ""
+title: "CTR study"
+author: "François Delavy and FrontPage Data for Rankings.io"
 date: "Last update: `r Sys.Date()`"
 output:
   html_document:
@@ -16,13 +16,13 @@ editor_options:
 
 <style>
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: #00d188;
-  border-color: #00d188;
+  background-color: #D21D5C;
+  border-color: #D21D5C;
 }
 
 body {
-  font-family: montserrat;
-  color: #444444;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #333333;
   font-size: 14px;
 }
 
@@ -33,7 +33,7 @@ h1 {
 
 h1.title {
   font-size: 30px;
-  color: #00d188;
+  color: #111111;
 }
 
 h2 {
@@ -51,18 +51,155 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.showte
 knitr::knit_hooks$set(inline = function(x) {
   prettyNum(x, big.mark = ",", small.mark = ",", scientific = F)
 })
-plots <- readRDS(here::here("proc_data/plots.RDS"))
-include_png <- function(item) {
-  knitr::include_graphics(
-    here::here("plots", "png", paste0(make.names(item), ".png")))
-  } 
+# plots <- readRDS(here::here("proc_data/plots.RDS"))
+# include_png <- function(item) {
+#   knitr::include_graphics(
+#     here::here("plots", "png", paste0(make.names(item), ".png")))
+#   } 
+
+required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel")
+# required_packages <- c("tidyverse", "readxl", "ggthemes", "hrbrthemes", "extrafont", "plotly", "scales", "stringr", "gganimate", "here", "tidytext", "sentimentr", "scales", "DT", "here", "sm", "mblm", "glue", "fs", "knitr", "rmdformats", "janitor", "urltools", "colorspace", "pdftools", "showtext")
+
+for(i in required_packages) { 
+  if(!require(i, character.only = T)) {
+    #  if package is not existing, install then load the package
+    install.packages(i, dependencies = T)
+    require(i, character.only = T)
+  }
+}
+
+
+## save plots?
+save <- FALSE
+#save <- FALSE
+
+## quality of png's
+dpi <- 750
+
+
+## theme updates; please adjust to client´s website
+
+base_size = 10
+r_col <- "#D21D5C" ## highlight color of rankings.io
+
+my_theme <- function(){
+  theme_minimal() +
+    theme(
+      plot.margin = margin(30, 30, 30, 30),
+      plot.background = element_rect(color = "white",
+                                     fill = "white"),
+      plot.title = element_text(size = 1.4 * base_size),
+      plot.title.position = "plot",
+      plot.subtitle = element_text(size = base_size),
+      plot.caption = element_text(color = "grey40",
+                                  size = 0.9 * base_size),
+      plot.caption.position = "plot",
+      axis.line.x = element_line(color = "black",
+                                 size = .8),
+      axis.line.y = element_line(color = "black",
+                                 size = .8),
+      axis.title.x = element_text(size =  base_size,
+                                  face = "bold"),
+      axis.title.y = element_text(size = base_size,
+                                  face = "bold"),
+      axis.text = element_text(size = 0.9 * base_size,
+                               color = "black",
+                               face = "bold"),
+      # axis.ticks = element_blank(),
+      axis.ticks = element_line(color = "black"),
+      panel.grid.major.x = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.major.y = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.minor.x = element_line(size = .4,
+                                        color = "#eaeaea",
+                                        linetype = "solid"),
+      panel.grid.minor.y = element_blank(),
+      panel.spacing.x = unit(2, "lines"),
+      panel.spacing.y = unit(1, "lines")
+    )
+}
+
+
+## numeric format for labels
+num_format <- scales::format_format(big.mark = ",", small.mark = ",", scientific = F)
+
+
+
 ```
 
 # 1 Introduction 
-filled out by Daniel
+
+In this study, we want to test for the effect of increasing [Click-Through Rates](https://support.google.com/google-ads/answer/2615875?hl=en) (CTRs) on Google Search rankings.  
+We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increase the number of visits to randomly selected car accident lawyers' websites with a service provider and measure the impact on the rankings.  
+
+By “artificially” increasing the number of searches and visits per day, we improve the CTR and thus hypothesize that it will have a positive impact on the Google Search ranking. As background, ([see Larry Kim's post](https://moz.com/blog/does-organic-ctr-impact-seo-rankings-new-data)) for a captivating discussion of this issue.  
+
+The goals of this project are:
+
+1. To test if increasing the CTR does increase the ranking and measure the gain.
+2. To test if using a provider of organic traffic to increase your SEO (by increasing your CTR), in the particular case of personal injury lawyers, is effective. 
+
 
 # 2 Methodology
-partly filled out by Daniel;
+
+## Overview
+
+We register with [SERP Empire](https://www.serpempire.com), a current hype organic traffic provider. We launch a campaign for 60 selected personal injury lawyer's websites. Each campaign is "artificially" boosting the number of searches and clicks for the keyword “[_city_] car accident lawyer”. By doing so, we increase their CTR for a duration of 30 days. 
+
+We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website over the course of the study to assess the strength of the effect and effectiveness of using a traffic provider.
+
+## In More Details
+
+### Websites Selection
+
+We select 3 personal injury lawyers in 20 U.S. cities. We randomly picked one website appearing in the first page, second page and third page of the results of a Google search with the keywords “[_city_] car accident lawyer”. We use [Ahrefs Keyword Explorer](https://ahrefs.com/keywords-explorer) for this selection. We only select websites that appeared in the first to third page of the Google Search results (according to Ahrefs), because SERP Empire does only collects the results of the first 3 pages. In the end, we obtain a sample of 60 personal injury lawyer websites in various cities and with various Google Search positions. 
+
+### Boosting Calibration
+
+We want to give each website a comparable boost in visits, and a boost that looks organic. If we gave the same boost to the personal injury website ranking 2nd in a large city where there is a lot of competition, let's say LA, to the website ranking 28th in Fresno, we would run into two problems. First, the comparative size of the boost will be extremely different: insignificant for the top personal injury lawyer's website in LA, but oversized for the lower ranking website in Fresno. Second, the boost in Fresno will not look "organic" and would likely be detected by Google as not being _real_ organic traffic on the website and discarded.   
+
+Therefore, we calibrate the boost in visits to an _estimated number of daily visits_ for each website. Here is how we do it: 
+
+1. We multiply the _average number of daily searches_ in a city for the keywords “[_city_] car accident lawyer” by the expected CTR of the website, computed from is Google search ranking (provided by Ahref) to a _ranking CTR factor_ (provided by the [Google Organic CTR History](https://www.advancedwebranking.com/ctrstudy/) of Advanced Web Ranking). This _ranking CTR factor_ provides an estimation of the CTR in function of the position in the Google Search results. Indeed, a website ranking first is much more likely to be visited than a website ranking lower. By doing so, we get the number of _estimated daily visits_.  
+
+2. Then, we multiply the _estimated daily visits_ to a common _multiplier_, this is the "boost", to obtain the calibrated number of daily keywords searches that we will add to each website with SERP Empire.
+
+In short, for each website:
+
+1. $\text{ Ranking CTR factor } * \text{ Daily Searches for keyword in city } = \text{ Estimated Daily Visits }$
+2. $\text{ Estimated Daily Visits } * Multiplier = \text{ Daily Keyword Searches }$
+
+Where:   
+
+* $\text{Ranking CTR factor} = \text{current ranking} * \text{CTR estimate from Google Organic CTR History study}$.  
+* $\text{CTR estimate from Google Organic CTR History study}$ is the obtained from the _Organic + Local Pack_ ([source](https://www.advancedwebranking.com/ctrstudy/)) and is:  
+
+```{r}
+SERP_features <- rio::import(here::here("proc_data", "SERP_features.csv"))
+SERP_features %>%
+  kbl(align=rep('c', 2)) %>%
+  kable_classic(full_width = F, font = 10)
+  # kable_styling(bootstrap_options = "condensed")
+```
+
+* The $Multiplier$ is the how much we multiply the $\text{Estimated Daily Visits}$: 30.  
+
+
+### SERP Empire
+
+- a campaign from eaach -> boost their estimiated daily visits by 30
+- but SERP settings to make the traffic looks organic.
+
+
+
+
+...
+
+----
+
 
 ##### Step 1 xxxx
 
@@ -82,13 +219,13 @@ here basic overview of the data set (missing values, number of observations, num
 
 
 
-```{r name_plot, echo=FALSE}
-  knitr::include_graphics(here::here("plots", "png", "name_example.png"))
+```{r name_plot, include=FALSE, echo=FALSE}
+  # knitr::include_graphics(here::here("plots", "png", "name_example.png"))
 ```
 
-```{r name_table, echo=FALSE}
-  title_description_table <- read.csv(here::here("plots", "csv", "name_example_table.csv"), stringsAsFactors=F)
-knitr::kable(title_description_table, caption = "Basic information about XXX")
+```{r name_table, include=FALSE, echo=FALSE}
+#   title_description_table <- read.csv(here::here("plots", "csv", "name_example_table.csv"), stringsAsFactors=F)
+# knitr::kable(title_description_table, caption = "Basic information about XXX")
 ```
 
 
