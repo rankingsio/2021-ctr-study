@@ -292,7 +292,8 @@ all_ranks_over_time <- results %>%
 girafe(ggobj = all_ranks_over_time,
        options = list(
          opts_hover_inv(css = "opacity:0.1;"),
-         opts_hover(css = "stroke-width:2;")
+         opts_hover(css = "stroke-width:2;"),
+         opts_toolbar(position = "bottomright") # change position of download button
        )
 )
 
@@ -307,25 +308,157 @@ We observe the following:
 
 ## Comparing First Week to Last Week
 
-As we saw previously that there is variability in the ranking, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study.  
+We saw previously that there is variability in the ranking. Thus, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study, in order to obtain more stable estimates.  
 
 
 --- one slopegraph here with the average, where you can hover.
 
-```{r}
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+# we compute the average of the first and last week for all samples
+all_avg_start <- results %>% 
+  filter(date < "2021-03-12") %>%
+  group_by(Sample_ID) %>% 
+  summarise(first_week = mean(rank, na.rm = TRUE))
+all_avg_end <- results %>% 
+  filter(date > "2021-03-29") %>%
+  group_by(Sample_ID) %>% 
+  summarise(last_week = mean(rank, na.rm = TRUE))
+
+# and add it back to the results dataframe:
+results_augm <- results %>%
+  left_join(all_avg_start, by = 'Sample_ID') %>%
+  left_join(all_avg_end, by = "Sample_ID") %>%
+  # we add a column with the starting page, to see if they have distinct fates:
+  mutate(
+    start_page = case_when(
+      first_week <= 10 ~ 1,
+      first_week > 10 & first_week <= 20 ~ 2,
+      first_week > 20 ~ 3
+    ),
+    rank_diff =  first_week - last_week
+  ) %>% 
+  rowwise() %>%
+  mutate(
+    label_diff = paste0(label, ": ", as.character(round(rank_diff, 0)), " rank(s)")
+  )
+
+# we need the week to be a column for the slope graph,
+# so we need to pivot to longer format the First and Last week:
+results_augm_long <- results_augm %>%
+  pivot_longer(cols = ends_with("_week"), names_to = "week", values_to = "average_rank")
+
+# a slopegraph
+slopegraph <- ggplot(data = results_augm_long) +
+  geom_line_interactive(aes(x = week, 
+                            y = average_rank, 
+                            group = Sample_ID, 
+                            tooltip = label_diff,
+                            data_id = label_diff)) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  labs(
+    title = "Average Rank in First and Last Week",
+    subtitle = "In pink, the average.\nHover on each line to highlight a particular sample."
+  ) + 
+  # average:
+  geom_line(
+    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
+    aes(x = week, y = avg, group = 1),
+    color = r_col,
+    size = 1
+  ) +
+  xlab("Week") +
+  ylab("Average Rank") + 
+  geom_text(
+    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
+    aes(x = week, y = avg, label = as.character(round(avg,1))), 
+    size = 3.5, color = r_col, nudge_x = c(-0.1, 0.1), fontface = "bold"
+  )
+
+# draw the graph:
+girafe(ggobj = slopegraph,
+       options = list(
+         opts_hover_inv(css = "opacity:0.1;"),
+         opts_hover(css = "stroke-width:2;"),
+         opts_toolbar(position = "bottomright") # change position of download button
+         # opts_toolbar(saveaspng = FALSE) # use this to disable toolbar aka download button
+       )
+)
+
+```
+
+This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms's website have different fates. In particular two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
+
+
+Because we collected several samples (60), we can test if this difference is likely due to chance (explained by an intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A *paired t-test* comparing the average ranking of each law firm during the first week and last week *shows that the difference is statistically significant*. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference in means is not equal to 0. In other words, we truly observed an increase of 2 ranks during the study.  
+
+```{r, echo = TRUE}
+
+t.test(results_augm$first_week,
+       results_augm$last_week,
+       paired=TRUE)
 
 ```
 
 
---- and three static slopegraphs here with the page in black, it's average, and the rest in pink. 
-
-```{r}
-
-```
+Is this effect stronger for websites that started on the last page?
 
 
+```{r, fig.align='center', fig.height=5, out.width='100%'}
+
+# we need to add the average as a column, 
+# so that we can plot 3 different averages in the facets.
+# we compute them first:
+results_augm_long <- results_augm_long %>%
+  group_by(week) %>%
+  # we add the overall average rank:
+  mutate(avg_rank_overall = mean(average_rank)) %>% 
+  # we also add the average by start_page, will be useful for the faceted slopegraph below
+  # much easier before transforming to long format
+  ungroup() %>%
+  group_by(start_page, week) %>%
+  mutate(avg_rank_overall_by_page = mean(average_rank)) %>%
+  ungroup()
+
+
+ggplot(data = results_augm_long) +
+  geom_line(aes(x = week, 
+                y = average_rank, 
+                group = Sample_ID)) +
+  labs(
+    title = "Average Rank in First and Last Week",
+    subtitle = "In pink, the average.\nHover on each line to highlight a particular sample."
+  ) + 
+  # average:
+  geom_line(
+    aes(x = week, y = avg_rank_overall_by_page, group = 1),
+    color = r_col,
+    size = 1
+  ) +
+  xlab("Week") +
+  ylab("Average Rank") + 
+  # geom_text(
+  #   data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
+  #   aes(x = week, y = avg, label = as.character(round(avg,1))), 
+  #   size = 3.5, color = r_col, nudge_x = c(-0.1, 0.1), fontface = "bold"
+  # ) +
+  my_theme() +
+    scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  facet_wrap(vars(start_page), ncol = 3)
+  
+  
+  
+  ```
+
+
+# Conclusion
+
+
+## Limitations
 
 # Annex
 
+--- move here the detailed methodology
 
 
