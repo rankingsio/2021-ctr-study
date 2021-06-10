@@ -26,7 +26,7 @@ border-color: #D21D5C;
 body {
 font-family: 'Alegreya Sans', sans-serif;
 color: #333333;
-font-size: 17px;
+font-size: 18px;
 }
 
 h1 {
@@ -161,17 +161,262 @@ The goals of this project are:
 
 # Methodology
 
-## Overview
+We register with [SERP Empire](https://www.serpempire.com), a current hype organic traffic provider. We launch a campaign for 60 selected personal injury lawyer's websites. Each campaign is "artificially" boosting the number of searches and clicks for the keyword “[_city_] car accident lawyer”. By doing so, we increase their CTR for 30 days. 
 
-We register with [SERP Empire](https://www.serpempire.com), a current hype organic traffic provider. We launch a campaign for 60 selected personal injury lawyer's websites. Each campaign is "artificially" boosting the number of searches and clicks for the keyword “[_city_] car accident lawyer”. By doing so, we increase their CTR for a duration of 30 days. 
+We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
 
-We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website over the course of the study to assess the strength of the effect and effectiveness of using a traffic provider.  
+One of the major caveats of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost. We rely on the Google Search ranking provided by SERP Empire to assess its own efficacy.    
 
-One of the major caveat of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost. We rely on the Google Search ranking provided by SERP Empire to assess its own efficacy.    
+Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect, however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting rankings.   
 
-Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting ranking.   
+See also the [Detailed Methodology](#detailed-methodology) in the Annex.  
 
-## In More Details
+
+# Research Findings 
+
+## Ranking Over Time
+
+We start by visualizing the evolution of the rank of the 60 websites. Each line represents the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a LOESS regression ([locally estimated scatterplot smoothing](https://en.wikipedia.org/wiki/Local_regression)) with standard error and represent a smoothed average, similar to a moving average (but better).  
+
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+all_ranks_over_time <- results %>%
+  ggplot() +
+  # geom_line(aes(x=date, y=rank, group=Sample_ID), alpha = 0.8) +
+  geom_line_interactive(aes(x = date,
+                            y = rank,
+                            group = Sample_ID,
+                            tooltip = label,
+                            data_id = label)
+  ) +
+  geom_smooth(aes(x=date, y=rank),
+              color = r_col,
+              size = 1,
+              se = TRUE) +
+  # geom_line(data = results %>% group_by(date) %>% summarize(avg = mean(rank, na.rm = TRUE)),
+  #           aes(x=date, y=avg),
+  #           color = r_col,
+  #           size = 2) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  scale_x_date(
+    breaks = c(min(results$date), "2021-03-12", "2021-03-12", "2021-03-19",
+               "2021-03-26", "2021-04-02", max(results$date)),
+    date_labels = "%d %b"
+    # date_breaks = "1 week",
+    # date_minor_breaks = "1 day"
+  ) +
+  labs(
+    title = "Ranking Over Time" ,
+    subtitle = "Ranking of all samples over time and a smoothed average (LOESS regression) in pink.\nHover on a line to highlight the evolution of a particular website."
+  ) +
+  xlab("Date") +
+  ylab("Rank")
+
+girafe(ggobj = all_ranks_over_time,
+       options = list(
+         opts_hover_inv(css = "opacity:0.1;"),
+         opts_hover(css = "stroke-width:2;"),
+         opts_toolbar(position = "bottomright") # change position of download button
+       )
+)
+
+```
+
+We observe the following: 
+
+* There is variability in the ranking of the websites, which will blurry the picture.
+* Some websites did see an increase in their ranking over the month, other a decrease.  
+* The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not dramatic. It seems to be around +2 positions.
+* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases; the picture seems to stabilize. Could 2 weeks be the time it has needed for the Google algorithm to capture and adjust to the boost in visits?   
+
+## Comparing First Week to Last Week
+
+We saw previously that there is variability in the ranking. Thus, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study, in order to obtain more stable estimates.  
+
+
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+# we compute the average of the first and last week for all samples
+all_avg_start <- results %>% 
+  filter(date < "2021-03-12") %>%
+  group_by(Sample_ID) %>% 
+  summarise(first_week = mean(rank, na.rm = TRUE))
+all_avg_end <- results %>% 
+  filter(date > "2021-03-29") %>%
+  group_by(Sample_ID) %>% 
+  summarise(last_week = mean(rank, na.rm = TRUE))
+
+# and add it back to the results dataframe:
+results_augm <- results %>%
+  left_join(all_avg_start, by = 'Sample_ID') %>%
+  left_join(all_avg_end, by = "Sample_ID") %>%
+  # we add a column with the starting page, to see if they have distinct fates:
+  mutate(
+    start_page = case_when(
+      first_week <= 10 ~ "Starts on 1st page",
+      first_week > 10 & first_week <= 20 ~ "Starts on 2nd page",
+      first_week > 20 ~ "Starts on 3rd page"
+    ),
+    rank_diff =  first_week - last_week
+  ) %>% 
+  rowwise() %>%
+  mutate(
+    label_diff = paste0(label, ": ", as.character(round(rank_diff, 0)), " rank(s)")
+  )
+
+# we need the week to be a column for the slope graph,
+# so we need to pivot to longer format the First and Last week:
+results_augm_long <- results_augm %>%
+  pivot_longer(cols = ends_with("_week"), names_to = "week", values_to = "average_rank")
+
+# a slopegraph
+slopegraph <- ggplot(data = results_augm_long) +
+  geom_line_interactive(aes(x = week, 
+                            y = average_rank, 
+                            group = Sample_ID, 
+                            tooltip = label_diff,
+                            data_id = label_diff)) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  labs(
+    title = "Average Rank in First and Last Week",
+    subtitle = "In pink, the average of all samples.\nHover on each line to highlight a particular sample."
+  ) + 
+  # average:
+  geom_line(
+    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
+    aes(x = week, y = avg, group = 1),
+    color = r_col,
+    size = 1
+  ) +
+  xlab("") +
+  ylab("Average Rank") + 
+  geom_text(
+    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
+    aes(x = week, y = avg, label = as.character(round(avg,1))), 
+    size = 3.5, color = r_col, nudge_x = c(-0.1, 0.1), fontface = "bold"
+  ) +
+  scale_x_discrete(labels=c("first_week" = "First Week", "last_week" = "Last Week"))
+
+# draw the graph:
+girafe(ggobj = slopegraph,
+       options = list(
+         opts_hover_inv(css = "opacity:0.1;"),
+         opts_hover(css = "stroke-width:2;"),
+         opts_toolbar(position = "bottomright") # change position of download button
+         # opts_toolbar(saveaspng = FALSE) # use this to disable toolbar aka download button
+       )
+)
+
+```
+
+This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms' websites have different fates. In particular two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
+
+
+Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A **paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference in means is not equal to 0. In other words, we truly observed an increase of 2 ranks during the study.  
+
+```{r, echo = FALSE}
+
+ttest_result <- t.test(results_augm$first_week,
+                       results_augm$last_week,
+                       paired=TRUE)
+
+ttest_print <- tibble(
+  `mean of the differences` = round(ttest_result$estimate, 3),
+  `degrees of freedom` = ttest_result$parameter,
+  `t statistic` = ttest_result$statistic, 
+  `p value` = ttest_result$p.value, 
+  `confidence interval` = paste0(
+    "[",
+    round(ttest_result$conf.int[1],2), 
+    ", ",
+    round(ttest_result$conf.int[2],2),
+    "]")
+)
+
+kbl(t(ttest_print)) %>% 
+  # kbl(align=rep('c', 3)) %>%
+  kable_classic(full_width = F, font = 14)
+
+```
+
+&nbsp;  
+
+Is this effect stronger for websites that started on the last page?
+
+
+```{r, fig.align='center', fig.height=5, out.width='100%', dpi=750}
+
+# we need to add the average as a column, 
+# so that we can plot 3 different averages in the facets.
+# we compute them first:
+results_augm_long <- results_augm_long %>%
+  group_by(week) %>%
+  # we add the overall average rank:
+  mutate(avg_rank_overall = mean(average_rank)) %>% 
+  # we also add the average by start_page, will be useful for the faceted slopegraph below
+  # much easier before transforming to long format
+  ungroup() %>%
+  group_by(start_page, week) %>%
+  mutate(avg_rank_overall_by_page = mean(average_rank)) %>%
+  ungroup()
+
+
+ggplot(data = results_augm_long) +
+  geom_line(aes(x = week, 
+                y = average_rank, 
+                group = Sample_ID)) +
+  labs(
+    title = "The Positive Effect Is Larger for Lower Ranking Websites",
+    subtitle = "In pink, the average."
+  ) + 
+  # average:
+  geom_line(
+    aes(x = week, y = avg_rank_overall_by_page, group = 1),
+    color = r_col,
+    size = 1
+  ) +
+  xlab("") +
+  ylab("Average Rank") + 
+  geom_text(
+    aes(x = week, y = avg_rank_overall_by_page, label = as.character(round(avg_rank_overall_by_page,1))),
+    size = 3, color = r_col, nudge_x = c(-0.2, 0.2), fontface = "bold"
+  ) +
+  my_theme() +
+  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  scale_x_discrete(labels=c("first_week" = "First Week", "last_week" = "Last Week")) +
+  facet_wrap(vars(start_page), ncol = 3)
+
+
+```
+
+The positive effect is, maybe without surprise, stronger for websites that started on the third page (+3 rank on average, only +1 for those that started already on the first page).
+
+# Conclusion
+
+The Google Search ranking of the sample personal injury lawyer's websites can vary day to day from a few ranks. Not all the websites have their ranking increasing after a month of boosting their daily number of visits after a Google Search for the keyword "car accident lawyer".  
+
+Nevertheless, we observe a significant positive effect of +2 ranks, on average. This effect is larger for websites ranking initially lower (e.g. that appear on the third page of the search results).  
+
+There is an interesting pattern at 2 weeks after the start of the study. This is the day where the ranking increases and stabilizes for most of the websites. Two weeks could be the time it has needed for the Google algorithm to capture and adjust to the boost in visits.  
+
+## Discussion of the Limitation of the Study
+
+This study has a few limitations.   
+
+First, we increased the number of visits for only one keyword of interest ("car accident lawyer"). However, it is arguably the most important keyword, and we increase the estimated number of daily visits by 30 (minus a bounce rate of 50%).   
+
+Second, we could not build a control group where we would not boost the number of visits, as SERP Empire does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower...  
+
+Third, we use SERP Empire to both boost the effect and measure the effect. We thus rely on SERP Empire's own Google Search ranking to assess their tool. There is, however, to our knowledge, no reason to not trust SERP Empire's Google Search ranking measurements.  
+
+Finally, we acknowledge that the results of this study are specific to the samples and parameters chosen: personal injury lawyer's websites, "car accident lawyer" as the keyword, a calibrated boost of 30 times the estimated number of daily visits, the SERP Empire parameters chosen, the traffic provider bots (SERP Empire), etc., and are thus not easily generalizable.  
+
+
+# Annex
+
+## Detailed Methodology
 
 ### Websites Selection
 
@@ -245,220 +490,5 @@ A few comment on the data quality:
 * There are a few websites who could not easily be found by SERP Empire, and needed to be modified. Thus, there are a few missing days at the beginning of the month for some samples.   
 * The initial ranking obtained from Ahrefs and that determined the CTR ranking factor is sometimes a bit different that the ranking on SERP Empire, which is to be expected. Nevertheless it is quite similar (it explains for instance why some websites ranked above the position 30).  
 * We boost the visits for one keyword only: "[_city_] car accident lawyer”
-
-
-
-# Research Findings 
-
-## Rankinng Over Time
-
-We start by visualizing the evolution of the rank of the 60 websites. Each line represent the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a loess regression with standard error and represent a smoothed average, similar to a moving average.  
-
-```{r, fig.align='center', fig.height=5, out.width='80%'}
-
-all_ranks_over_time <- results %>%
-  ggplot() +
-  # geom_line(aes(x=date, y=rank, group=Sample_ID), alpha = 0.8) +
-  geom_line_interactive(aes(x = date,
-                            y = rank,
-                            group = Sample_ID,
-                            tooltip = label,
-                            data_id = label)
-  ) +
-  geom_smooth(aes(x=date, y=rank),
-              color = r_col,
-              size = 1,
-              se = TRUE) +
-  # geom_line(data = results %>% group_by(date) %>% summarize(avg = mean(rank, na.rm = TRUE)),
-  #           aes(x=date, y=avg),
-  #           color = r_col,
-  #           size = 2) +
-  my_theme() +
-  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
-  scale_x_date(
-    breaks = c(min(results$date), "2021-03-12", "2021-03-12", "2021-03-19",
-               "2021-03-26", "2021-04-02", max(results$date)),
-    date_labels = "%d %b"
-    # date_breaks = "1 week",
-    # date_minor_breaks = "1 day"
-  ) +
-  labs(
-    title = "Ranking Over Time" ,
-    subtitle = "Ranking of all samples over time and a smoothed average (loess regression) in pink.\nHover on a line to highlight the evolution of a particular website."
-  ) +
-  xlab("Date") +
-  ylab("Rank")
-
-girafe(ggobj = all_ranks_over_time,
-       options = list(
-         opts_hover_inv(css = "opacity:0.1;"),
-         opts_hover(css = "stroke-width:2;"),
-         opts_toolbar(position = "bottomright") # change position of download button
-       )
-)
-
-```
-
-We observe the following: 
-
-* There is variability in the ranking of the websites, which will blurry the picture.
-* Some websites did see an increase in their ranking over the month, other a decrease.  
-* The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not dramatic. It seems to be around +2 positions.
-* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking is less and a bit more stabilized. Could 2 weeks be the time it has needed for the Google algorithm to capture and adjust to the boost in visits?   
-
-## Comparing First Week to Last Week
-
-We saw previously that there is variability in the ranking. Thus, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study, in order to obtain more stable estimates.  
-
-
---- one slopegraph here with the average, where you can hover.
-
-```{r, fig.align='center', fig.height=5, out.width='80%'}
-
-# we compute the average of the first and last week for all samples
-all_avg_start <- results %>% 
-  filter(date < "2021-03-12") %>%
-  group_by(Sample_ID) %>% 
-  summarise(first_week = mean(rank, na.rm = TRUE))
-all_avg_end <- results %>% 
-  filter(date > "2021-03-29") %>%
-  group_by(Sample_ID) %>% 
-  summarise(last_week = mean(rank, na.rm = TRUE))
-
-# and add it back to the results dataframe:
-results_augm <- results %>%
-  left_join(all_avg_start, by = 'Sample_ID') %>%
-  left_join(all_avg_end, by = "Sample_ID") %>%
-  # we add a column with the starting page, to see if they have distinct fates:
-  mutate(
-    start_page = case_when(
-      first_week <= 10 ~ 1,
-      first_week > 10 & first_week <= 20 ~ 2,
-      first_week > 20 ~ 3
-    ),
-    rank_diff =  first_week - last_week
-  ) %>% 
-  rowwise() %>%
-  mutate(
-    label_diff = paste0(label, ": ", as.character(round(rank_diff, 0)), " rank(s)")
-  )
-
-# we need the week to be a column for the slope graph,
-# so we need to pivot to longer format the First and Last week:
-results_augm_long <- results_augm %>%
-  pivot_longer(cols = ends_with("_week"), names_to = "week", values_to = "average_rank")
-
-# a slopegraph
-slopegraph <- ggplot(data = results_augm_long) +
-  geom_line_interactive(aes(x = week, 
-                            y = average_rank, 
-                            group = Sample_ID, 
-                            tooltip = label_diff,
-                            data_id = label_diff)) +
-  my_theme() +
-  scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
-  labs(
-    title = "Average Rank in First and Last Week",
-    subtitle = "In pink, the average.\nHover on each line to highlight a particular sample."
-  ) + 
-  # average:
-  geom_line(
-    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
-    aes(x = week, y = avg, group = 1),
-    color = r_col,
-    size = 1
-  ) +
-  xlab("Week") +
-  ylab("Average Rank") + 
-  geom_text(
-    data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
-    aes(x = week, y = avg, label = as.character(round(avg,1))), 
-    size = 3.5, color = r_col, nudge_x = c(-0.1, 0.1), fontface = "bold"
-  )
-
-# draw the graph:
-girafe(ggobj = slopegraph,
-       options = list(
-         opts_hover_inv(css = "opacity:0.1;"),
-         opts_hover(css = "stroke-width:2;"),
-         opts_toolbar(position = "bottomright") # change position of download button
-         # opts_toolbar(saveaspng = FALSE) # use this to disable toolbar aka download button
-       )
-)
-
-```
-
-This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms's website have different fates. In particular two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
-
-
-Because we collected several samples (60), we can test if this difference is likely due to chance (explained by an intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A *paired t-test* comparing the average ranking of each law firm during the first week and last week *shows that the difference is statistically significant*. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference in means is not equal to 0. In other words, we truly observed an increase of 2 ranks during the study.  
-
-```{r, echo = TRUE}
-
-t.test(results_augm$first_week,
-       results_augm$last_week,
-       paired=TRUE)
-
-```
-
-
-Is this effect stronger for websites that started on the last page?
-
-
-```{r, fig.align='center', fig.height=5, out.width='100%'}
-
-# we need to add the average as a column, 
-# so that we can plot 3 different averages in the facets.
-# we compute them first:
-results_augm_long <- results_augm_long %>%
-  group_by(week) %>%
-  # we add the overall average rank:
-  mutate(avg_rank_overall = mean(average_rank)) %>% 
-  # we also add the average by start_page, will be useful for the faceted slopegraph below
-  # much easier before transforming to long format
-  ungroup() %>%
-  group_by(start_page, week) %>%
-  mutate(avg_rank_overall_by_page = mean(average_rank)) %>%
-  ungroup()
-
-
-ggplot(data = results_augm_long) +
-  geom_line(aes(x = week, 
-                y = average_rank, 
-                group = Sample_ID)) +
-  labs(
-    title = "Average Rank in First and Last Week",
-    subtitle = "In pink, the average.\nHover on each line to highlight a particular sample."
-  ) + 
-  # average:
-  geom_line(
-    aes(x = week, y = avg_rank_overall_by_page, group = 1),
-    color = r_col,
-    size = 1
-  ) +
-  xlab("Week") +
-  ylab("Average Rank") + 
-  # geom_text(
-  #   data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
-  #   aes(x = week, y = avg, label = as.character(round(avg,1))), 
-  #   size = 3.5, color = r_col, nudge_x = c(-0.1, 0.1), fontface = "bold"
-  # ) +
-  my_theme() +
-    scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
-  facet_wrap(vars(start_page), ncol = 3)
-  
-  
-  
-  ```
-
-
-# Conclusion
-
-
-## Limitations
-
-# Annex
-
---- move here the detailed methodology
 
 
