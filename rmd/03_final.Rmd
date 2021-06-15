@@ -215,11 +215,11 @@ all_ranks_over_time <- results %>%
   ylab("Rank")
 
 ranking_over_time_widget <- girafe(ggobj = all_ranks_over_time,
-       options = list(
-         opts_hover_inv(css = "opacity:0.1;"),
-         opts_hover(css = "stroke-width:2;"),
-         opts_toolbar(position = "bottomright") # change position of download button
-       )
+                                   options = list(
+                                     opts_hover_inv(css = "opacity:0.1;"),
+                                     opts_hover(css = "stroke-width:2;"),
+                                     opts_toolbar(position = "bottomright") # change position of download button
+                                   )
 )
 ranking_over_time_widget
 
@@ -268,7 +268,66 @@ We observe the following:
 * There is variability in the ranking of the websites, which will blurry the picture.
 * Some websites did see an increase in their ranking over the month, other a decrease.  
 * The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not dramatic. It seems to be around +2 positions.
-* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases; the picture seems to stabilize. Could 2 weeks be the time it has needed for the Google algorithm to capture and adjust to the boost in visits?   
+* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases; the picture seems to stabilize. One potential explanation could be an update in Google's algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates), did not detect an update on March 19th or 18th (but an unconfirmed update on March 10th). It did however observe increased Google SERP fluctuations on March 13th and 14th. Another alternative explanation could be that two weeks is the time it has needed for the Google algorithm to capture and adjust to the boost in visits.    
+
+
+## Day-to-day Fluctuations
+
+As we previously saw, there is a high variability in the rankings, even day to day. We can use an indexed line plot, all law firms finishing at 0 on April 5th, to show the fluctuations over time.  
+
+```{r, fig.align='center', fig.height=5, out.width='80%'}
+
+last_ranks <- results %>% 
+  filter(date == "2021-04-05") %>%
+  select(Sample_ID, last_rank = rank)
+
+fluctuations <- results %>%
+  left_join(last_ranks) %>%
+  mutate(indexed_rank = rank - last_rank) %>%
+  ggplot() +
+  # geom_line(aes(x=date, y=indexed_rank, group=Sample_ID), alpha = 0.8) +
+  geom_line_interactive(aes(x = date,
+                            y = indexed_rank,
+                            group = Sample_ID,
+                            tooltip = label,
+                            data_id = label)
+  ) +
+  my_theme() +
+  scale_y_continuous(breaks = c(-10, -5, 0, 5, 10)) +
+  # scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
+  scale_x_date(
+    breaks = c(min(results$date), "2021-03-12", "2021-03-12", "2021-03-19",
+               "2021-03-26", "2021-04-02", max(results$date)),
+    date_labels = "%d %b"
+    # date_breaks = "1 week",
+    # date_minor_breaks = "1 day"
+  ) +
+  labs(
+    title = "Fluctuations of the Rankings Over Time" ,
+    subtitle = "The rankings are indexed to the last ranking of each sample,\nshowing the variety of trajectories leading to the final rank."
+  ) +
+  xlab("Date") +
+  ylab("Rank, indexed to Apr. 05")
+
+fluctuations_widget <- girafe(ggobj = fluctuations,
+                              options = list(
+                                opts_hover_inv(css = "opacity:0.1;"),
+                                opts_hover(css = "stroke-width:2;"),
+                                opts_toolbar(position = "bottomright") # change position of download button
+                              )
+)
+fluctuations_widget
+
+
+
+```
+
+We observe again that:  
+
+* There are large fluctuations. Some websites saw a change of 10 ranks or more over the period. Several samples saw a change in the ranking larger than ±5 in a single day.  
+* The rankings seem to fluctuate less after March 19th. The variance of the ranking befor March 19th is around ±5. After it seems to be ±3.  
+
+
 
 ## Comparing First Week to Last Week
 
@@ -349,18 +408,29 @@ girafe(ggobj = slopegraph,
        )
 )
 
+# save high quality static PNG in last resort:
+# (still need to modify subtitle)
+ggsave(filename = here::here("plots/slopegraph.png"), 
+       plot = slopegraph,
+       width = 200,
+       height = 150, 
+       units = "mm",
+       dpi = 800)
+
 ```
 
 This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms' websites have different fates. In particular two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
 
 
-Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A **paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference in means is not equal to 0. In other words, we truly observed an increase of 2 ranks during the study.  
+Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A **paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference is not equal to 0. In other words, we truly observed a non-zero, positive, increase during the study.  
 
 ```{r, echo = FALSE}
 
 ttest_result <- t.test(results_augm$first_week,
                        results_augm$last_week,
-                       paired=TRUE)
+                       paired=TRUE,
+                       # alternative = "greater" # two-sided and greater shows same result.
+                       ) 
 
 ttest_print <- tibble(
   `mean of the differences` = round(ttest_result$estimate, 3),
@@ -445,7 +515,7 @@ There is an interesting pattern at 2 weeks after the start of the study. This is
 
 This study has a few limitations.   
 
-First, we increased the number of visits for only one keyword of interest ("car accident lawyer"). However, it is arguably the most important keyword, and we increase the estimated number of daily visits by 30 (minus a bounce rate of 50%).   
+First, we increased the number of visits for only one keyword of interest ("car accident lawyer"). However, it is arguably the most important keyword, and we multiply the estimated number of daily visits by 30 (minus a bounce rate of 50%).   
 
 Second, we could not build a control group where we would not boost the number of visits, as SERP Empire does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower...  
 
@@ -503,7 +573,7 @@ study_plan %>%
 
 ```
 
-How to read the study plan, for instance for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend onn the ranking, to obtain the _estimated number of daily click_ for the sample 1. We multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website everyday.  
+How to read the study plan, for instance for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend on the ranking, to obtain the _estimated number of daily click_ for the sample 1. We multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website everyday.  
 
 ### SERP Empire Parameters
 
