@@ -60,7 +60,7 @@ knitr::knit_hooks$set(inline = function(x) {
 #     here::here("plots", "png", paste0(make.names(item), ".png")))
 #   } 
 
-required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel", "ggiraph")
+required_packages <- c("tidyverse", "here", "colorspace", "pdftools", "kableExtra", "ggrepel", "ggiraph", "lubridate", "htmlwidgets")
 # required_packages <- c("tidyverse", "readxl", "ggthemes", "hrbrthemes", "extrafont", "plotly", "scales", "stringr", "gganimate", "here", "tidytext", "sentimentr", "scales", "DT", "here", "sm", "mblm", "glue", "fs", "knitr", "rmdformats", "janitor", "urltools", "colorspace", "pdftools", "showtext")
 
 for(i in required_packages) { 
@@ -138,6 +138,7 @@ SERP_features <- rio::import(here::here("proc_data", "SERP_features.csv"))
 
 # we merge the study plan with the results to add the info about the city:
 results <- results %>% 
+  mutate(date = lubridate::ymd(date)) %>% # re-convert, maybe it solves issue on Daniel computers (already done in 01_read.Rmd) 
   left_join(study_plan %>% select(Sample_ID = Sample, City)) %>%
   rowwise() %>%
   mutate(label = paste0("Sample ", Sample_ID, ", ", City))
@@ -213,13 +214,20 @@ all_ranks_over_time <- results %>%
   xlab("Date") +
   ylab("Rank")
 
-girafe(ggobj = all_ranks_over_time,
+ranking_over_time_widget <- girafe(ggobj = all_ranks_over_time,
        options = list(
          opts_hover_inv(css = "opacity:0.1;"),
          opts_hover(css = "stroke-width:2;"),
          opts_toolbar(position = "bottomright") # change position of download button
        )
 )
+ranking_over_time_widget
+
+# we also save the widget as HTML:
+saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget.html"), selfcontained = FALSE)
+saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget-self_conntained.html"), 
+           selfcontained = TRUE)
+
 
 ```
 
