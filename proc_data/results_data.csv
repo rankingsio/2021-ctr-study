@@ -1,0 +1,1889 @@
+y,x,group,tooltip,data_id,PANEL,flipped_aes,colour,size,linetype,alpha,x_date
+7,18691,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-05
+11,18692,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-06
+9,18693,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-07
+10,18694,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-08
+10,18695,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-09
+12,18696,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-10
+9,18697,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-11
+7,18698,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-12
+7,18699,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-13
+6,18700,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-14
+12,18701,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-15
+15,18702,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-16
+15,18703,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-17
+14,18704,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-18
+10,18705,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-19
+11,18706,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-20
+11,18707,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-21
+11,18708,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-22
+11,18709,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-23
+9,18710,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-24
+11,18711,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-25
+11,18712,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-26
+11,18713,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-27
+11,18714,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-28
+10,18715,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-29
+9,18716,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-30
+10,18717,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-03-31
+10,18718,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-04-01
+10,18719,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-04-02
+10,18720,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-04-03
+10,18721,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-04-04
+10,18722,1,"Sample 1, San Antonio","Sample 1, San Antonio",1,FALSE,black,0.5,1,,2021-04-05
+13,18691,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-05
+13,18692,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-06
+14,18693,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-07
+13,18694,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-08
+15,18695,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-09
+12,18696,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-10
+14,18697,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-11
+15,18698,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-12
+15,18699,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-13
+15,18700,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-14
+13,18701,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-15
+14,18702,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-16
+14,18703,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-17
+14,18704,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-18
+12,18705,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-19
+10,18706,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-20
+10,18707,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-21
+9,18708,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-22
+10,18709,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-23
+10,18710,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-24
+10,18711,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-25
+10,18712,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-26
+10,18713,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-27
+10,18714,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-28
+11,18715,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-29
+11,18716,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-30
+11,18717,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-03-31
+11,18718,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-04-01
+10,18719,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-04-02
+11,18720,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-04-03
+11,18721,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-04-04
+11,18722,2,"Sample 2, San Antonio","Sample 2, San Antonio",1,FALSE,black,0.5,1,,2021-04-05
+,18691,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-05
+,18692,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-06
+,18693,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-07
+26,18694,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-08
+26,18695,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-09
+26,18696,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-10
+26,18697,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-11
+26,18698,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-12
+23,18699,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-13
+23,18700,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-14
+22,18701,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-15
+24,18702,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-16
+24,18703,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-17
+27,18704,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-18
+23,18705,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-19
+23,18706,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-20
+23,18707,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-21
+23,18708,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-22
+22,18709,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-23
+23,18710,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-24
+23,18711,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-25
+23,18712,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-26
+24,18713,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-27
+23,18714,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-28
+24,18715,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-29
+24,18716,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-30
+24,18717,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-03-31
+24,18718,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-04-01
+23,18719,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-04-02
+23,18720,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-04-03
+23,18721,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-04-04
+23,18722,3,"Sample 3, San Antonio","Sample 3, San Antonio",1,FALSE,black,0.5,1,,2021-04-05
+6,18691,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-05
+5,18692,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-06
+5,18693,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-07
+5,18694,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-08
+5,18695,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-09
+5,18696,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-10
+4,18697,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-11
+4,18698,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-13
+4,18700,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-14
+7,18701,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-15
+8,18702,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-16
+9,18703,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-17
+8,18704,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-18
+6,18705,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-19
+6,18706,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-20
+6,18707,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-21
+6,18708,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-22
+6,18709,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-23
+6,18710,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-24
+6,18711,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-25
+6,18712,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-26
+6,18713,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-27
+6,18714,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-28
+6,18715,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-29
+6,18716,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-30
+6,18717,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-03-31
+6,18718,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-04-01
+6,18719,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-04-02
+6,18720,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-04-03
+6,18721,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-04-04
+6,18722,4,"Sample 4, Los Angeles","Sample 4, Los Angeles",1,FALSE,black,0.5,1,,2021-04-05
+14,18691,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-05
+15,18692,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-06
+17,18693,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-07
+17,18694,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-08
+17,18695,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-09
+17,18696,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-10
+17,18697,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-11
+16,18698,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-12
+17,18699,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-13
+18,18700,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-14
+18,18701,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-15
+18,18702,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-16
+20,18703,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-17
+19,18704,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-18
+16,18705,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-19
+17,18706,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-20
+17,18707,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-21
+16,18708,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-22
+17,18709,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-23
+16,18710,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-24
+17,18711,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-25
+17,18712,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-26
+17,18713,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-27
+19,18714,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-28
+19,18715,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-29
+21,18716,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-30
+21,18717,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-03-31
+25,18718,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-04-01
+26,18719,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-04-02
+26,18720,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-04-03
+26,18721,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-04-04
+26,18722,5,"Sample 5, Los Angeles","Sample 5, Los Angeles",1,FALSE,black,0.5,1,,2021-04-05
+8,18691,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-05
+8,18692,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-06
+8,18693,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-07
+8,18694,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-08
+8,18695,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-09
+8,18696,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-10
+8,18697,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-11
+8,18698,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-12
+8,18699,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-13
+8,18700,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-14
+8,18701,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-15
+9,18702,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-16
+8,18703,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-17
+8,18704,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-18
+8,18705,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-19
+8,18706,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-20
+8,18707,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-21
+8,18708,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-22
+8,18709,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-24
+8,18711,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-25
+8,18712,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-26
+8,18713,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-27
+8,18714,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-28
+8,18715,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-04-01
+8,18719,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-04-02
+8,18720,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-04-03
+8,18721,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-04-04
+8,18722,6,"Sample 7, Brooklyn","Sample 7, Brooklyn",1,FALSE,black,0.5,1,,2021-04-05
+3,18691,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-05
+5,18692,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-06
+7,18693,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-07
+7,18694,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-08
+7,18695,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-09
+7,18696,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-10
+11,18697,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-11
+7,18698,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-12
+6,18699,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-13
+5,18700,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-14
+4,18701,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-15
+2,18702,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-16
+1,18703,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-17
+1,18704,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-18
+2,18705,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-19
+1,18706,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-20
+1,18707,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-21
+1,18708,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-22
+1,18709,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-23
+1,18710,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-24
+1,18711,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-25
+1,18712,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-26
+1,18713,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-27
+1,18714,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-28
+1,18715,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-29
+1,18716,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-30
+1,18717,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-03-31
+1,18718,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-04-01
+2,18719,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-04-02
+2,18720,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-04-03
+1,18721,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-04-04
+1,18722,7,"Sample 8, Brooklyn","Sample 8, Brooklyn",1,FALSE,black,0.5,1,,2021-04-05
+,18691,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-05
+,18692,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-06
+26,18693,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-07
+26,18694,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-08
+26,18695,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-09
+30,18696,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-10
+30,18697,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-11
+30,18698,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-12
+30,18699,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-13
+29,18700,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-14
+29,18701,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-15
+21,18702,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-16
+23,18703,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-17
+23,18704,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-18
+23,18705,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-19
+22,18706,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-20
+22,18707,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-21
+22,18708,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-23
+21,18710,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-24
+21,18711,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-25
+21,18712,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-26
+22,18713,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-27
+23,18714,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-28
+23,18715,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-29
+22,18716,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-30
+22,18717,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-03-31
+22,18718,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-04-01
+22,18719,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-04-02
+22,18720,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-04-03
+22,18721,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-04-04
+22,18722,8,"Sample 9, Brooklyn","Sample 9, Brooklyn",1,FALSE,black,0.5,1,,2021-04-05
+12,18691,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-05
+12,18692,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-06
+12,18693,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-07
+12,18694,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-08
+13,18695,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-09
+12,18696,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-10
+11,18697,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-11
+11,18698,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-12
+12,18699,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-13
+11,18700,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-14
+12,18701,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-15
+13,18702,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-16
+14,18703,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-17
+14,18704,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-18
+11,18705,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-19
+10,18706,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-20
+10,18707,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-21
+10,18708,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-22
+10,18709,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-23
+10,18710,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-24
+10,18711,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-25
+8,18712,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-26
+9,18713,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-27
+8,18714,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-28
+7,18715,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-04-01
+8,18719,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-04-02
+8,18720,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-04-03
+8,18721,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-04-04
+8,18722,9,"Sample 10, Miami","Sample 10, Miami",1,FALSE,black,0.5,1,,2021-04-05
+15,18691,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-05
+16,18692,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-06
+16,18693,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-08
+15,18695,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-09
+15,18696,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-10
+13,18697,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-11
+15,18698,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-12
+14,18699,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-13
+14,18700,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-14
+17,18701,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-15
+20,18702,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-16
+21,18703,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-17
+20,18704,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-18
+16,18705,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-19
+17,18706,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-20
+16,18707,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-21
+15,18708,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-22
+16,18709,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-23
+20,18710,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-24
+18,18711,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-25
+17,18712,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-26
+18,18713,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-27
+28,18714,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-28
+23,18715,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-29
+21,18716,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-30
+19,18717,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-03-31
+20,18718,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-04-01
+20,18719,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-04-02
+22,18720,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-04-03
+23,18721,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-04-04
+23,18722,10,"Sample 11, Miami","Sample 11, Miami",1,FALSE,black,0.5,1,,2021-04-05
+29,18691,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-05
+29,18692,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-06
+28,18693,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-07
+30,18694,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-08
+30,18695,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-09
+29,18696,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-10
+29,18697,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-11
+29,18698,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-12
+29,18699,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-13
+29,18700,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-14
+33,18701,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-15
+33,18702,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-16
+33,18703,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-17
+33,18704,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-18
+29,18705,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-19
+30,18706,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-20
+30,18707,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-21
+29,18708,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-22
+29,18709,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-23
+30,18710,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-24
+30,18711,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-25
+30,18712,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-26
+29,18713,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-27
+29,18714,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-28
+30,18715,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-29
+28,18716,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-30
+28,18717,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-03-31
+28,18718,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-04-01
+29,18719,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-04-02
+30,18720,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-04-03
+30,18721,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-04-04
+30,18722,11,"Sample 12, Miami","Sample 12, Miami",1,FALSE,black,0.5,1,,2021-04-05
+11,18691,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-05
+11,18692,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-06
+9,18693,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-07
+10,18694,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-08
+9,18695,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-09
+10,18696,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-10
+10,18697,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-11
+10,18698,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-12
+11,18699,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-13
+12,18700,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-14
+11,18701,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-15
+11,18702,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-16
+12,18703,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-17
+12,18704,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-18
+8,18705,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-19
+7,18706,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-20
+7,18707,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-21
+7,18708,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-22
+7,18709,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-23
+7,18710,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-24
+7,18711,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-25
+7,18712,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-26
+7,18713,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-27
+8,18714,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-28
+7,18715,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-04-01
+9,18719,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-04-02
+8,18720,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-04-03
+8,18721,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-04-04
+8,18722,12,"Sample 13, Houston","Sample 13, Houston",1,FALSE,black,0.5,1,,2021-04-05
+19,18691,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-05
+17,18692,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-06
+18,18693,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-08
+19,18695,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-09
+19,18696,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-10
+19,18697,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-11
+19,18698,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-12
+20,18699,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-13
+21,18700,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-14
+21,18701,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-15
+22,18702,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-16
+23,18703,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-17
+23,18704,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-18
+19,18705,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-19
+18,18706,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-20
+18,18707,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-21
+18,18708,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-22
+19,18709,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-23
+20,18710,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-24
+19,18711,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-25
+18,18712,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-26
+19,18713,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-27
+18,18714,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-28
+17,18715,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-29
+17,18716,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-30
+17,18717,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-03-31
+17,18718,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-04-01
+17,18719,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-04-02
+18,18720,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-04-03
+17,18721,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-04-04
+18,18722,13,"Sample 14, Houston","Sample 14, Houston",1,FALSE,black,0.5,1,,2021-04-05
+21,18691,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-05
+21,18692,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-06
+20,18693,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-07
+22,18694,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-08
+18,18695,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-09
+21,18696,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-10
+23,18697,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-11
+23,18698,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-12
+21,18699,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-13
+17,18700,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-14
+17,18701,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-15
+17,18702,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-16
+19,18703,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-17
+19,18704,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-18
+16,18705,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-19
+16,18706,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-20
+16,18707,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-21
+17,18708,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-22
+17,18709,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-23
+17,18710,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-24
+19,18711,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-25
+20,18712,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-26
+19,18713,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-27
+19,18714,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-28
+22,18715,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-29
+23,18716,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-30
+22,18717,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-03-31
+22,18718,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-04-01
+22,18719,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-04-02
+22,18720,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-04-03
+21,18721,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-04-04
+21,18722,14,"Sample 15, Houston","Sample 15, Houston",1,FALSE,black,0.5,1,,2021-04-05
+8,18691,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-05
+8,18692,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-06
+6,18693,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-07
+5,18694,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-08
+3,18695,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-09
+2,18696,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-10
+2,18697,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-11
+2,18698,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-12
+3,18699,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-13
+3,18700,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-14
+4,18701,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-15
+4,18702,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-16
+5,18703,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-17
+7,18704,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-18
+4,18705,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-19
+4,18706,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-20
+4,18707,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-21
+3,18708,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-22
+3,18709,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-23
+3,18710,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-24
+3,18711,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-25
+4,18712,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-26
+3,18713,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-27
+3,18714,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-28
+4,18715,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-29
+5,18716,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-30
+5,18717,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-03-31
+5,18718,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-04-01
+4,18719,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-04-02
+4,18720,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-04-03
+4,18721,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-04-04
+4,18722,15,"Sample 16, Chicago","Sample 16, Chicago",1,FALSE,black,0.5,1,,2021-04-05
+19,18691,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-05
+18,18692,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-06
+18,18693,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-07
+15,18694,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-08
+19,18695,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-09
+14,18696,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-10
+16,18697,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-11
+14,18698,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-12
+12,18699,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-13
+11,18700,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-14
+11,18701,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-15
+13,18702,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-16
+13,18703,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-17
+13,18704,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-18
+12,18705,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-19
+12,18706,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-20
+12,18707,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-21
+15,18708,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-22
+14,18709,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-23
+13,18710,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-24
+13,18711,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-25
+13,18712,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-26
+12,18713,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-27
+13,18714,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-28
+13,18715,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-29
+13,18716,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-30
+13,18717,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-03-31
+14,18718,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-04-01
+14,18719,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-04-02
+12,18720,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-04-03
+13,18721,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-04-04
+13,18722,16,"Sample 17, Chicago","Sample 17, Chicago",1,FALSE,black,0.5,1,,2021-04-05
+,18691,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-05
+20,18692,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-06
+24,18693,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-07
+23,18694,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-08
+23,18695,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-09
+23,18696,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-10
+23,18697,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-11
+25,18698,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-12
+26,18699,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-13
+26,18700,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-14
+22,18701,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-15
+22,18702,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-16
+22,18703,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-17
+23,18704,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-18
+23,18705,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-19
+17,18706,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-20
+18,18707,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-21
+18,18708,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-22
+18,18709,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-23
+18,18710,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-24
+18,18711,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-25
+18,18712,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-26
+18,18713,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-27
+18,18714,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-28
+18,18715,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-29
+18,18716,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-30
+18,18717,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-03-31
+18,18718,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-04-01
+18,18719,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-04-02
+18,18720,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-04-03
+18,18721,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-04-04
+18,18722,17,"Sample 18, Chicago","Sample 18, Chicago",1,FALSE,black,0.5,1,,2021-04-05
+11,18691,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-05
+11,18692,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-06
+9,18693,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-07
+12,18694,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-08
+11,18695,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-09
+12,18696,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-10
+11,18697,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-11
+10,18698,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-12
+11,18699,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-13
+13,18700,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-14
+9,18701,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-15
+9,18702,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-16
+11,18703,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-17
+11,18704,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-18
+7,18705,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-19
+7,18706,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-20
+7,18707,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-21
+6,18708,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-22
+6,18709,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-23
+6,18710,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-24
+6,18711,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-25
+6,18712,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-26
+8,18713,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-27
+7,18714,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-28
+8,18715,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-04-01
+8,18719,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-04-02
+8,18720,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-04-03
+8,18721,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-04-04
+8,18722,18,"Sample 19, Dallas","Sample 19, Dallas",1,FALSE,black,0.5,1,,2021-04-05
+23,18691,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-05
+21,18692,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-06
+22,18693,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-07
+20,18694,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-08
+20,18695,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-09
+22,18696,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-10
+21,18697,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-11
+22,18698,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-12
+22,18699,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-13
+20,18700,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-14
+16,18701,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-15
+22,18702,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-16
+20,18703,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-17
+20,18704,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-18
+16,18705,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-19
+18,18706,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-20
+21,18707,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-21
+21,18708,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-23
+22,18710,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-24
+21,18711,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-25
+20,18712,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-26
+15,18713,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-27
+20,18714,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-28
+23,18715,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-29
+23,18716,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-30
+23,18717,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-03-31
+22,18718,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-04-01
+23,18719,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-04-02
+20,18720,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-04-03
+22,18721,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-04-04
+22,18722,19,"Sample 20, Dallas","Sample 20, Dallas",1,FALSE,black,0.5,1,,2021-04-05
+16,18691,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-05
+17,18692,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-06
+16,18693,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-08
+18,18695,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-09
+15,18696,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-10
+15,18697,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-11
+19,18698,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-12
+19,18699,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-13
+19,18700,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-14
+15,18701,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-15
+15,18702,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-16
+20,18703,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-17
+21,18704,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-18
+17,18705,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-19
+16,18706,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-20
+13,18707,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-21
+13,18708,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-22
+13,18709,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-23
+16,18710,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-24
+16,18711,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-25
+16,18712,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-26
+16,18713,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-27
+16,18714,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-28
+16,18715,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-29
+16,18716,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-30
+16,18717,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-03-31
+16,18718,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-04-01
+15,18719,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-04-02
+16,18720,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-04-03
+16,18721,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-04-04
+16,18722,20,"Sample 21, Dallas","Sample 21, Dallas",1,FALSE,black,0.5,1,,2021-04-05
+5,18691,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-05
+6,18692,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-06
+7,18693,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-07
+7,18694,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-08
+7,18695,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-09
+5,18696,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-10
+5,18697,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-11
+4,18698,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-13
+5,18700,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-14
+4,18701,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-15
+5,18702,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-16
+5,18703,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-17
+5,18704,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-18
+4,18705,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-19
+3,18706,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-20
+4,18707,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-21
+4,18708,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-22
+4,18709,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-23
+5,18710,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-24
+4,18711,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-25
+4,18712,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-26
+4,18713,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-27
+4,18714,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-28
+4,18715,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-29
+4,18716,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-30
+4,18717,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-03-31
+4,18718,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-04-01
+4,18719,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-04-02
+4,18720,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-04-03
+4,18721,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-04-04
+7,18722,21,"Sample 22, Minneapolis","Sample 22, Minneapolis",1,FALSE,black,0.5,1,,2021-04-05
+17,18691,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-05
+18,18692,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-06
+18,18693,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-08
+19,18695,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-09
+18,18696,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-10
+17,18697,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-11
+17,18698,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-12
+17,18699,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-13
+15,18700,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-14
+15,18701,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-15
+18,18702,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-16
+21,18703,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-17
+19,18704,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-18
+15,18705,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-19
+16,18706,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-20
+15,18707,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-21
+15,18708,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-22
+15,18709,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-23
+15,18710,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-24
+15,18711,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-25
+14,18712,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-26
+14,18713,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-27
+14,18714,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-28
+14,18715,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-29
+14,18716,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-30
+14,18717,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-03-31
+14,18718,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-04-01
+14,18719,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-04-02
+14,18720,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-04-03
+14,18721,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-04-04
+14,18722,22,"Sample 23, Minneapolis","Sample 23, Minneapolis",1,FALSE,black,0.5,1,,2021-04-05
+28,18691,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-05
+33,18692,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-06
+30,18693,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-07
+34,18694,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-08
+34,18695,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-09
+30,18696,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-10
+32,18697,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-11
+30,18698,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-12
+33,18699,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-13
+29,18700,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-14
+31,18701,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-15
+32,18702,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-16
+32,18703,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-17
+32,18704,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-18
+29,18705,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-19
+28,18706,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-20
+29,18707,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-21
+28,18708,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-22
+28,18709,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-23
+27,18710,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-24
+26,18711,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-25
+27,18712,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-26
+27,18713,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-27
+26,18714,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-28
+26,18715,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-29
+26,18716,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-30
+26,18717,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-03-31
+26,18718,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-04-01
+27,18719,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-04-02
+26,18720,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-04-03
+26,18721,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-04-04
+26,18722,23,"Sample 24, Minneapolis","Sample 24, Minneapolis",1,FALSE,black,0.5,1,,2021-04-05
+4,18691,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-05
+4,18692,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-06
+3,18693,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-07
+3,18694,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-08
+3,18695,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-09
+3,18696,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-10
+3,18697,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-11
+3,18698,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-13
+6,18700,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-14
+9,18701,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-15
+10,18702,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-16
+11,18703,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-17
+11,18704,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-18
+8,18705,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-19
+7,18706,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-20
+7,18707,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-21
+7,18708,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-22
+8,18709,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-24
+7,18711,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-25
+7,18712,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-26
+7,18713,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-27
+7,18714,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-28
+8,18715,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-04-01
+6,18719,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-04-02
+5,18720,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-04-03
+5,18721,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-04-04
+5,18722,24,"Sample 25, Las Vegas","Sample 25, Las Vegas",1,FALSE,black,0.5,1,,2021-04-05
+23,18691,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-05
+25,18692,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-06
+25,18693,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-07
+23,18694,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-08
+21,18695,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-09
+22,18696,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-10
+24,18697,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-11
+19,18698,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-12
+22,18699,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-13
+22,18700,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-14
+21,18701,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-15
+22,18702,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-16
+24,18703,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-17
+25,18704,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-18
+28,18705,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-19
+21,18706,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-20
+19,18707,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-21
+27,18708,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-22
+28,18709,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-23
+26,18710,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-24
+27,18711,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-25
+27,18712,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-26
+26,18713,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-27
+24,18714,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-28
+26,18715,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-29
+25,18716,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-30
+28,18717,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-03-31
+28,18718,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-04-01
+28,18719,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-04-02
+29,18720,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-04-03
+13,18721,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-04-04
+13,18722,25,"Sample 26, Las Vegas","Sample 26, Las Vegas",1,FALSE,black,0.5,1,,2021-04-05
+,18691,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-05
+,18692,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-06
+29,18693,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-07
+28,18694,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-08
+28,18695,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-09
+30,18696,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-10
+21,18697,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-11
+29,18698,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-12
+28,18699,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-13
+28,18700,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-14
+24,18701,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-15
+25,18702,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-16
+23,18703,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-17
+25,18704,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-18
+21,18705,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-19
+20,18706,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-20
+20,18707,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-21
+24,18708,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-23
+21,18710,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-24
+22,18711,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-25
+21,18712,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-26
+21,18713,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-27
+21,18714,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-28
+21,18715,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-29
+21,18716,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-30
+20,18717,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-03-31
+20,18718,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-04-01
+19,18719,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-04-02
+19,18720,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-04-03
+20,18721,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-04-04
+20,18722,26,"Sample 27, Las Vegas","Sample 27, Las Vegas",1,FALSE,black,0.5,1,,2021-04-05
+3,18691,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-05
+4,18692,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-06
+4,18693,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-07
+4,18694,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-08
+5,18695,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-09
+5,18696,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-10
+5,18697,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-11
+3,18698,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-13
+4,18700,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-14
+3,18701,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-15
+4,18702,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-16
+4,18703,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-17
+4,18704,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-18
+3,18705,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-19
+2,18706,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-20
+2,18707,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-21
+2,18708,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-22
+2,18709,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-23
+2,18710,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-24
+2,18711,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-25
+2,18712,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-26
+2,18713,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-27
+2,18714,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-28
+2,18715,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-29
+2,18716,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-30
+2,18717,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-03-31
+2,18718,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-04-01
+2,18719,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-04-02
+2,18720,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-04-03
+2,18721,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-04-04
+2,18722,27,"Sample 28, Orlando","Sample 28, Orlando",1,FALSE,black,0.5,1,,2021-04-05
+,18691,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-05
+,18692,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-06
+23,18693,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-07
+23,18694,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-08
+23,18695,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-09
+24,18696,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-10
+25,18697,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-11
+25,18698,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-12
+25,18699,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-13
+26,18700,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-14
+21,18701,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-15
+24,18702,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-16
+24,18703,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-17
+24,18704,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-18
+24,18705,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-19
+24,18706,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-20
+24,18707,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-21
+21,18708,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-23
+21,18710,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-24
+21,18711,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-25
+21,18712,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-26
+21,18713,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-27
+21,18714,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-28
+20,18715,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-29
+19,18716,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-30
+19,18717,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-03-31
+19,18718,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-04-01
+18,18719,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-04-02
+19,18720,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-04-03
+19,18721,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-04-04
+19,18722,28,"Sample 29, Orlando","Sample 29, Orlando",1,FALSE,black,0.5,1,,2021-04-05
+21,18691,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-05
+18,18692,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-06
+23,18693,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-07
+23,18694,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-08
+23,18695,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-09
+18,18696,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-10
+18,18697,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-11
+21,18698,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-12
+21,18699,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-13
+21,18700,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-14
+21,18701,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-15
+19,18702,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-16
+18,18703,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-17
+18,18704,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-18
+12,18705,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-19
+12,18706,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-20
+11,18707,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-21
+10,18708,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-22
+10,18709,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-23
+10,18710,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-24
+10,18711,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-25
+10,18712,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-26
+14,18713,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-27
+16,18714,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-28
+16,18715,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-29
+16,18716,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-30
+16,18717,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-03-31
+21,18718,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-04-01
+21,18719,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-04-02
+22,18720,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-04-03
+22,18721,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-04-04
+22,18722,29,"Sample 30, Orlando","Sample 30, Orlando",1,FALSE,black,0.5,1,,2021-04-05
+10,18691,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-05
+10,18692,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-06
+8,18693,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-07
+7,18694,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-08
+8,18695,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-09
+7,18696,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-10
+5,18697,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-11
+7,18698,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-12
+6,18699,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-13
+3,18700,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-14
+3,18701,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-15
+3,18702,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-16
+3,18703,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-17
+3,18704,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-18
+3,18705,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-19
+3,18706,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-20
+2,18707,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-21
+3,18708,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-22
+2,18709,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-23
+2,18710,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-24
+3,18711,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-25
+3,18712,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-26
+3,18713,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-27
+3,18714,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-28
+3,18715,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-29
+4,18716,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-30
+4,18717,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-03-31
+3,18718,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-04-01
+2,18719,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-04-02
+3,18720,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-04-03
+2,18721,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-04-04
+2,18722,30,"Sample 31, Tampa","Sample 31, Tampa",1,FALSE,black,0.5,1,,2021-04-05
+14,18691,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-05
+16,18692,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-06
+16,18693,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-07
+16,18694,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-08
+17,18695,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-09
+18,18696,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-10
+14,18697,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-11
+15,18698,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-12
+15,18699,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-13
+18,18700,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-14
+12,18701,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-15
+15,18702,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-16
+17,18703,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-17
+20,18704,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-18
+15,18705,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-19
+15,18706,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-20
+15,18707,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-21
+15,18708,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-22
+15,18709,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-23
+15,18710,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-24
+15,18711,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-25
+15,18712,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-26
+15,18713,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-27
+17,18714,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-28
+15,18715,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-29
+15,18716,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-30
+15,18717,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-03-31
+15,18718,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-04-01
+15,18719,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-04-02
+16,18720,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-04-03
+15,18721,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-04-04
+15,18722,31,"Sample 32, Tampa","Sample 32, Tampa",1,FALSE,black,0.5,1,,2021-04-05
+,18691,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-05
+,18692,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-06
+25,18693,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-07
+29,18694,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-08
+29,18695,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-09
+24,18696,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-10
+24,18697,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-11
+26,18698,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-12
+26,18699,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-13
+26,18700,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-14
+26,18701,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-15
+26,18702,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-16
+26,18703,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-17
+26,18704,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-18
+24,18705,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-19
+25,18706,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-20
+21,18707,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-21
+21,18708,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-23
+22,18710,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-24
+22,18711,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-25
+21,18712,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-26
+20,18713,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-27
+20,18714,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-28
+20,18715,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-29
+21,18716,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-30
+21,18717,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-03-31
+20,18718,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-04-01
+20,18719,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-04-02
+20,18720,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-04-03
+21,18721,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-04-04
+21,18722,32,"Sample 33, Tampa","Sample 33, Tampa",1,FALSE,black,0.5,1,,2021-04-05
+12,18691,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-05
+6,18692,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-06
+12,18693,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-07
+6,18694,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-08
+10,18695,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-09
+8,18696,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-10
+8,18697,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-11
+9,18698,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-12
+9,18699,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-13
+10,18700,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-14
+12,18701,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-15
+12,18702,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-16
+12,18703,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-17
+12,18704,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-18
+8,18705,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-19
+8,18706,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-20
+8,18707,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-21
+8,18708,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-22
+8,18709,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-24
+8,18711,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-25
+10,18712,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-26
+10,18713,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-27
+10,18714,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-28
+10,18715,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-29
+11,18716,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-30
+10,18717,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-03-31
+10,18718,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-04-01
+10,18719,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-04-02
+9,18720,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-04-03
+11,18721,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-04-04
+11,18722,33,"Sample 34, Kansas City","Sample 34, Kansas City",1,FALSE,black,0.5,1,,2021-04-05
+,18691,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-05
+,18692,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-06
+,18693,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-07
+,18694,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-08
+,18695,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-09
+25,18696,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-10
+27,18697,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-11
+24,18698,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-12
+24,18699,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-13
+24,18700,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-14
+25,18701,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-15
+25,18702,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-16
+25,18703,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-17
+25,18704,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-18
+25,18705,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-19
+25,18706,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-20
+21,18707,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-21
+22,18708,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-22
+29,18709,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-23
+28,18710,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-24
+22,18711,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-25
+29,18712,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-26
+28,18713,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-27
+28,18714,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-28
+29,18715,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-29
+29,18716,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-30
+25,18717,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-03-31
+25,18718,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-04-01
+25,18719,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-04-02
+28,18720,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-04-03
+27,18721,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-04-04
+27,18722,34,"Sample 35, Kansas City","Sample 35, Kansas City",1,FALSE,black,0.5,1,,2021-04-05
+,18691,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-05
+32,18692,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-06
+27,18693,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-07
+27,18694,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-08
+34,18695,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-09
+28,18696,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-10
+34,18697,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-11
+32,18698,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-12
+31,18699,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-13
+30,18700,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-14
+30,18701,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-15
+30,18702,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-16
+30,18703,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-17
+30,18704,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-18
+30,18705,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-19
+30,18706,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-20
+30,18707,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-21
+30,18708,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-22
+30,18709,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-23
+30,18710,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-24
+30,18711,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-25
+26,18712,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-26
+26,18713,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-27
+26,18714,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-28
+26,18715,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-29
+26,18716,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-30
+25,18717,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-03-31
+25,18718,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-04-01
+26,18719,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-04-02
+26,18720,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-04-03
+26,18721,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-04-04
+26,18722,35,"Sample 36, Kansas City","Sample 36, Kansas City",1,FALSE,black,0.5,1,,2021-04-05
+2,18691,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-05
+2,18692,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-06
+2,18693,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-07
+2,18694,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-08
+3,18695,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-09
+3,18696,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-10
+7,18697,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-11
+7,18698,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-12
+7,18699,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-13
+8,18700,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-14
+8,18701,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-15
+9,18702,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-16
+10,18703,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-17
+9,18704,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-18
+6,18705,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-19
+5,18706,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-20
+5,18707,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-21
+5,18708,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-22
+5,18709,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-23
+5,18710,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-24
+5,18711,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-25
+5,18712,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-26
+5,18713,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-27
+5,18714,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-28
+6,18715,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-29
+6,18716,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-30
+6,18717,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-03-31
+6,18718,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-04-01
+5,18719,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-04-02
+6,18720,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-04-03
+6,18721,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-04-04
+6,18722,36,"Sample 37, Austin","Sample 37, Austin",1,FALSE,black,0.5,1,,2021-04-05
+19,18691,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-05
+19,18692,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-06
+12,18693,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-07
+12,18694,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-08
+13,18695,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-09
+15,18696,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-10
+15,18697,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-11
+16,18698,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-12
+16,18699,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-13
+17,18700,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-14
+13,18701,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-15
+16,18702,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-16
+17,18703,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-17
+17,18704,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-18
+15,18705,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-19
+16,18706,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-20
+16,18707,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-21
+16,18708,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-22
+15,18709,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-23
+15,18710,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-24
+15,18711,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-25
+16,18712,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-26
+16,18713,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-27
+16,18714,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-28
+16,18715,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-29
+16,18716,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-30
+16,18717,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-03-31
+15,18718,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-04-01
+16,18719,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-04-02
+16,18720,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-04-03
+17,18721,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-04-04
+17,18722,37,"Sample 38, Austin","Sample 38, Austin",1,FALSE,black,0.5,1,,2021-04-05
+,18691,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-05
+18,18692,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-06
+23,18693,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-07
+23,18694,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-08
+23,18695,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-09
+23,18696,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-10
+22,18697,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-11
+22,18698,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-12
+21,18699,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-13
+21,18700,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-14
+23,18701,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-15
+19,18702,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-16
+19,18703,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-17
+21,18704,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-18
+21,18705,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-19
+21,18706,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-20
+21,18707,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-21
+18,18708,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-22
+18,18709,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-23
+18,18710,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-24
+17,18711,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-25
+18,18712,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-26
+18,18713,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-27
+19,18714,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-28
+17,18715,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-29
+18,18716,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-30
+18,18717,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-03-31
+18,18718,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-04-01
+18,18719,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-04-02
+18,18720,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-04-03
+18,18721,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-04-04
+18,18722,38,"Sample 39, Austin","Sample 39, Austin",1,FALSE,black,0.5,1,,2021-04-05
+,18691,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-05
+,18692,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-06
+,18693,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-07
+13,18694,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-08
+13,18695,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-09
+13,18696,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-10
+10,18697,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-11
+13,18698,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-12
+9,18699,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-13
+10,18700,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-14
+9,18701,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-15
+9,18702,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-16
+11,18703,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-17
+11,18704,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-18
+9,18705,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-19
+8,18706,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-20
+7,18707,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-21
+8,18708,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-22
+8,18709,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-24
+8,18711,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-25
+8,18712,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-26
+8,18713,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-27
+8,18714,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-28
+8,18715,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-29
+7,18716,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-30
+7,18717,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-04-01
+7,18719,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-04-02
+7,18720,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-04-03
+7,18721,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-04-04
+8,18722,39,"Sample 40, Nashville","Sample 40, Nashville",1,FALSE,black,0.5,1,,2021-04-05
+16,18691,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-05
+15,18692,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-06
+15,18693,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-07
+25,18694,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-08
+25,18695,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-09
+25,18696,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-10
+25,18697,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-11
+25,18698,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-12
+25,18699,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-13
+25,18700,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-14
+22,18701,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-15
+17,18702,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-16
+21,18703,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-17
+21,18704,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-18
+17,18705,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-19
+17,18706,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-20
+17,18707,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-21
+13,18708,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-22
+13,18709,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-23
+13,18710,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-24
+13,18711,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-25
+13,18712,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-26
+13,18713,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-27
+13,18714,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-28
+12,18715,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-29
+12,18716,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-30
+14,18717,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-03-31
+18,18718,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-04-01
+18,18719,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-04-02
+18,18720,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-04-03
+18,18721,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-04-04
+18,18722,40,"Sample 41, Nashville","Sample 41, Nashville",1,FALSE,black,0.5,1,,2021-04-05
+,18691,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-05
+30,18692,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-06
+30,18693,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-07
+25,18694,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-08
+25,18695,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-09
+24,18696,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-10
+28,18697,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-11
+26,18698,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-12
+22,18699,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-13
+22,18700,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-14
+24,18701,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-15
+24,18702,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-16
+27,18703,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-17
+27,18704,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-18
+27,18705,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-19
+20,18706,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-20
+20,18707,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-21
+20,18708,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-22
+20,18709,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-23
+20,18710,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-24
+20,18711,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-25
+20,18712,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-26
+20,18713,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-27
+20,18714,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-28
+20,18715,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-29
+23,18716,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-30
+25,18717,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-03-31
+24,18718,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-04-01
+24,18719,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-04-02
+24,18720,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-04-03
+24,18721,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-04-04
+24,18722,41,"Sample 42, Nashville","Sample 42, Nashville",1,FALSE,black,0.5,1,,2021-04-05
+7,18691,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-05
+5,18692,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-06
+4,18693,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-07
+3,18694,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-08
+3,18695,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-09
+3,18696,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-10
+4,18697,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-11
+5,18698,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-13
+3,18700,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-14
+4,18701,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-15
+4,18702,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-16
+4,18703,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-17
+4,18704,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-18
+4,18705,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-19
+4,18706,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-20
+4,18707,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-21
+5,18708,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-22
+5,18709,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-23
+4,18710,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-24
+4,18711,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-25
+4,18712,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-26
+4,18713,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-27
+5,18714,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-28
+5,18715,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-29
+4,18716,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-30
+5,18717,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-03-31
+5,18718,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-04-01
+5,18719,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-04-02
+4,18720,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-04-03
+5,18721,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-04-04
+4,18722,42,"Sample 43, Baltimore","Sample 43, Baltimore",1,FALSE,black,0.5,1,,2021-04-05
+30,18691,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-05
+30,18692,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-06
+30,18693,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-07
+30,18694,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-08
+34,18695,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-09
+34,18696,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-10
+34,18697,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-11
+31,18698,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-12
+31,18699,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-13
+31,18700,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-14
+26,18701,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-15
+27,18702,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-16
+27,18703,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-17
+32,18704,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-18
+28,18705,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-19
+28,18706,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-20
+28,18707,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-21
+28,18708,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-22
+27,18709,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-23
+27,18710,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-24
+26,18711,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-25
+25,18712,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-26
+27,18713,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-27
+27,18714,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-28
+27,18715,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-29
+27,18716,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-30
+28,18717,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-03-31
+28,18718,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-04-01
+30,18719,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-04-02
+30,18720,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-04-03
+30,18721,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-04-04
+29,18722,43,"Sample 44, Baltimore","Sample 44, Baltimore",1,FALSE,black,0.5,1,,2021-04-05
+27,18691,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-05
+24,18692,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-06
+23,18693,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-07
+28,18694,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-08
+28,18695,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-09
+23,18696,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-10
+23,18697,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-11
+28,18698,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-12
+28,18699,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-13
+29,18700,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-14
+27,18701,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-15
+30,18702,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-16
+30,18703,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-17
+30,18704,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-18
+28,18705,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-19
+26,18706,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-20
+26,18707,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-21
+25,18708,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-22
+25,18709,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-23
+23,18710,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-24
+25,18711,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-25
+25,18712,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-26
+24,18713,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-27
+24,18714,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-28
+25,18715,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-29
+25,18716,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-30
+25,18717,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-03-31
+25,18718,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-04-01
+27,18719,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-04-02
+26,18720,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-04-03
+26,18721,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-04-04
+26,18722,44,"Sample 45, Baltimore","Sample 45, Baltimore",1,FALSE,black,0.5,1,,2021-04-05
+9,18691,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-05
+8,18692,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-06
+5,18693,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-07
+8,18694,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-08
+8,18695,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-09
+3,18696,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-10
+4,18697,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-11
+6,18698,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-12
+4,18699,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-13
+6,18700,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-14
+8,18701,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-15
+4,18702,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-16
+6,18703,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-17
+5,18704,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-18
+4,18705,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-19
+6,18706,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-20
+7,18707,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-21
+6,18708,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-22
+6,18709,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-23
+6,18710,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-24
+5,18711,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-25
+7,18712,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-26
+6,18713,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-27
+6,18714,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-28
+6,18715,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-29
+6,18716,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-30
+6,18717,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-03-31
+7,18718,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-04-01
+5,18719,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-04-02
+7,18720,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-04-03
+5,18721,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-04-04
+4,18722,45,"Sample 46, Queens","Sample 46, Queens",1,FALSE,black,0.5,1,,2021-04-05
+,18691,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-05
+16,18692,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-06
+16,18693,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-08
+18,18695,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-09
+19,18696,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-10
+19,18697,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-11
+14,18698,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-12
+11,18699,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-13
+10,18700,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-14
+10,18701,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-15
+15,18702,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-16
+15,18703,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-17
+15,18704,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-18
+12,18705,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-19
+12,18706,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-20
+14,18707,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-21
+15,18708,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-22
+14,18709,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-23
+14,18710,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-24
+15,18711,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-25
+15,18712,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-26
+15,18713,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-27
+15,18714,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-28
+14,18715,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-29
+14,18716,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-30
+13,18717,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-03-31
+13,18718,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-04-01
+11,18719,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-04-02
+11,18720,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-04-03
+11,18721,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-04-04
+11,18722,46,"Sample 47, Queens","Sample 47, Queens",1,FALSE,black,0.5,1,,2021-04-05
+15,18691,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-05
+14,18692,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-06
+14,18693,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-07
+15,18694,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-08
+14,18695,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-09
+16,18696,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-10
+16,18697,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-11
+18,18698,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-12
+17,18699,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-13
+20,18700,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-14
+18,18701,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-15
+18,18702,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-16
+18,18703,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-17
+20,18704,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-18
+6,18705,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-19
+6,18706,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-20
+6,18707,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-21
+7,18708,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-22
+6,18709,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-24
+6,18711,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-25
+7,18712,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-26
+8,18713,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-27
+8,18714,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-28
+7,18715,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-29
+8,18716,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-30
+8,18717,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-03-31
+8,18718,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-04-01
+16,18719,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-04-02
+16,18720,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-04-03
+15,18721,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-04-04
+15,18722,47,"Sample 48, Queens","Sample 48, Queens",1,FALSE,black,0.5,1,,2021-04-05
+8,18691,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-05
+8,18692,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-06
+7,18693,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-07
+7,18694,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-08
+6,18695,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-09
+8,18696,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-10
+9,18697,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-11
+9,18698,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-12
+10,18699,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-13
+11,18700,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-14
+10,18701,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-15
+13,18702,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-16
+13,18703,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-17
+13,18704,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-18
+9,18705,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-19
+9,18706,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-20
+9,18707,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-21
+9,18708,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-22
+9,18709,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-23
+8,18710,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-24
+9,18711,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-25
+9,18712,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-26
+9,18713,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-27
+7,18714,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-28
+4,18715,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-29
+4,18716,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-30
+4,18717,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-03-31
+4,18718,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-04-01
+4,18719,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-04-02
+4,18720,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-04-03
+4,18721,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-04-04
+5,18722,48,"Sample 49, Fresno","Sample 49, Fresno",1,FALSE,black,0.5,1,,2021-04-05
+19,18691,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-05
+19,18692,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-06
+16,18693,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-07
+17,18694,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-08
+18,18695,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-09
+22,18696,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-10
+18,18697,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-11
+17,18698,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-12
+17,18699,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-13
+14,18700,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-14
+13,18701,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-15
+13,18702,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-16
+14,18703,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-17
+14,18704,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-18
+17,18705,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-19
+12,18706,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-20
+12,18707,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-21
+12,18708,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-22
+12,18709,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-23
+11,18710,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-24
+11,18711,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-25
+11,18712,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-26
+11,18713,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-27
+16,18714,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-28
+16,18715,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-29
+15,18716,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-30
+14,18717,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-03-31
+13,18718,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-04-01
+13,18719,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-04-02
+14,18720,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-04-03
+14,18721,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-04-04
+11,18722,49,"Sample 50, Fresno","Sample 50, Fresno",1,FALSE,black,0.5,1,,2021-04-05
+,18691,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-05
+,18692,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-06
+31,18693,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-07
+31,18694,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-08
+31,18695,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-09
+31,18696,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-10
+31,18697,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-11
+29,18698,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-12
+29,18699,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-13
+27,18700,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-14
+27,18701,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-15
+27,18702,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-16
+32,18703,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-17
+32,18704,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-18
+29,18705,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-19
+27,18706,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-20
+27,18707,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-21
+27,18708,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-22
+28,18709,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-23
+28,18710,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-24
+28,18711,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-25
+28,18712,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-26
+28,18713,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-27
+28,18714,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-28
+28,18715,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-29
+28,18716,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-30
+28,18717,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-03-31
+29,18718,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-04-01
+29,18719,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-04-02
+29,18720,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-04-03
+29,18721,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-04-04
+29,18722,50,"Sample 51, Fresno","Sample 51, Fresno",1,FALSE,black,0.5,1,,2021-04-05
+,18691,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-05
+8,18692,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-06
+8,18693,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-07
+7,18694,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-08
+7,18695,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-09
+6,18696,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-10
+10,18697,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-11
+9,18698,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-12
+6,18699,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-13
+9,18700,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-14
+7,18701,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-15
+6,18702,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-16
+5,18703,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-17
+10,18704,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-18
+6,18705,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-19
+5,18706,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-20
+5,18707,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-21
+5,18708,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-22
+5,18709,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-23
+5,18710,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-24
+4,18711,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-25
+5,18712,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-26
+4,18713,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-27
+3,18714,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-28
+4,18715,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-29
+5,18716,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-30
+3,18717,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-03-31
+3,18718,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-04-01
+3,18719,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-04-02
+3,18720,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-04-03
+3,18721,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-04-04
+3,18722,51,"Sample 52, Charleston","Sample 52, Charleston",1,FALSE,black,0.5,1,,2021-04-05
+17,18691,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-05
+16,18692,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-06
+18,18693,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-07
+18,18694,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-08
+17,18695,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-09
+17,18696,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-10
+17,18697,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-11
+34,18698,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-12
+34,18699,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-13
+34,18700,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-14
+28,18701,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-15
+28,18702,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-16
+28,18703,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-17
+27,18704,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-18
+29,18705,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-19
+28,18706,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-20
+28,18707,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-21
+28,18708,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-22
+28,18709,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-23
+28,18710,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-24
+28,18711,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-25
+28,18712,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-26
+28,18713,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-27
+13,18714,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-28
+12,18715,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-29
+12,18716,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-30
+12,18717,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-03-31
+12,18718,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-04-01
+25,18719,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-04-02
+24,18720,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-04-03
+24,18721,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-04-04
+24,18722,52,"Sample 53, Charleston","Sample 53, Charleston",1,FALSE,black,0.5,1,,2021-04-05
+,18691,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-05
+,18692,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-06
+,18693,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-07
+,18694,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-08
+,18695,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-09
+21,18696,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-10
+21,18697,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-11
+19,18698,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-12
+20,18699,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-13
+20,18700,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-14
+19,18701,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-15
+19,18702,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-16
+19,18703,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-17
+19,18704,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-18
+19,18705,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-19
+13,18706,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-20
+13,18707,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-21
+13,18708,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-22
+13,18709,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-23
+13,18710,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-24
+13,18711,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-25
+11,18712,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-26
+11,18713,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-27
+11,18714,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-28
+11,18715,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-29
+11,18716,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-30
+11,18717,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-03-31
+11,18718,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-04-01
+11,18719,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-04-02
+11,18720,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-04-03
+11,18721,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-04-04
+11,18722,53,"Sample 54, Charleston","Sample 54, Charleston",1,FALSE,black,0.5,1,,2021-04-05
+11,18691,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-05
+12,18692,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-06
+10,18693,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-07
+11,18694,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-08
+13,18695,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-09
+11,18696,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-10
+12,18697,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-11
+10,18698,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-12
+10,18699,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-13
+9,18700,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-14
+10,18701,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-15
+12,18702,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-16
+13,18703,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-17
+13,18704,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-18
+9,18705,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-19
+9,18706,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-20
+9,18707,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-21
+9,18708,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-22
+9,18709,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-23
+9,18710,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-24
+9,18711,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-25
+9,18712,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-26
+9,18713,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-27
+9,18714,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-28
+9,18715,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-29
+9,18716,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-30
+9,18717,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-03-31
+9,18718,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-04-01
+9,18719,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-04-02
+9,18720,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-04-03
+9,18721,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-04-04
+9,18722,54,"Sample 55, Denver","Sample 55, Denver",1,FALSE,black,0.5,1,,2021-04-05
+17,18691,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-05
+18,18692,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-06
+18,18693,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-07
+17,18694,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-08
+18,18695,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-09
+15,18696,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-10
+15,18697,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-11
+14,18698,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-12
+14,18699,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-13
+15,18700,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-14
+14,18701,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-15
+15,18702,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-16
+15,18703,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-17
+14,18704,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-18
+16,18705,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-19
+14,18706,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-20
+14,18707,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-21
+13,18708,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-22
+13,18709,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-23
+14,18710,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-24
+13,18711,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-25
+14,18712,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-26
+15,18713,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-27
+14,18714,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-28
+14,18715,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-29
+13,18716,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-30
+13,18717,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-03-31
+16,18718,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-04-01
+12,18719,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-04-02
+12,18720,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-04-03
+14,18721,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-04-04
+14,18722,55,"Sample 56, Denver","Sample 56, Denver",1,FALSE,black,0.5,1,,2021-04-05
+,18691,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-05
+25,18692,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-06
+25,18693,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-07
+25,18694,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-08
+25,18695,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-09
+26,18696,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-10
+26,18697,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-11
+26,18698,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-12
+26,18699,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-13
+25,18700,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-14
+25,18701,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-15
+25,18702,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-16
+26,18703,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-17
+29,18704,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-18
+29,18705,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-19
+23,18706,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-20
+22,18707,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-21
+22,18708,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-23
+21,18710,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-24
+23,18711,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-25
+25,18712,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-26
+25,18713,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-27
+25,18714,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-28
+23,18715,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-29
+24,18716,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-30
+25,18717,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-03-31
+25,18718,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-04-01
+25,18719,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-04-02
+25,18720,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-04-03
+27,18721,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-04-04
+28,18722,56,"Sample 57, Denver","Sample 57, Denver",1,FALSE,black,0.5,1,,2021-04-05
+15,18691,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-05
+15,18692,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-06
+14,18693,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-07
+15,18694,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-08
+15,18695,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-09
+16,18696,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-10
+15,18697,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-11
+15,18698,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-12
+15,18699,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-13
+15,18700,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-14
+15,18701,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-15
+19,18702,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-16
+20,18703,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-17
+22,18704,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-18
+24,18705,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-19
+12,18706,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-20
+9,18707,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-21
+16,18708,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-22
+11,18709,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-23
+11,18710,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-24
+13,18711,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-25
+13,18712,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-26
+11,18713,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-27
+13,18714,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-28
+12,18715,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-29
+13,18716,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-30
+11,18717,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-03-31
+9,18718,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-04-01
+11,18719,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-04-02
+10,18720,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-04-03
+14,18721,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-04-04
+14,18722,57,"Sample 58, Boston","Sample 58, Boston",1,FALSE,black,0.5,1,,2021-04-05
+,18691,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-05
+13,18692,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-06
+11,18693,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-07
+19,18694,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-08
+14,18695,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-09
+14,18696,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-10
+13,18697,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-11
+15,18698,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-12
+15,18699,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-13
+13,18700,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-14
+19,18701,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-15
+12,18702,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-16
+12,18703,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-17
+12,18704,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-18
+12,18705,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-19
+10,18706,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-20
+10,18707,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-21
+10,18708,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-22
+12,18709,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-23
+10,18710,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-24
+10,18711,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-25
+10,18712,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-26
+18,18713,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-27
+14,18714,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-28
+16,18715,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-29
+14,18716,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-30
+13,18717,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-03-31
+14,18718,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-04-01
+14,18719,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-04-02
+14,18720,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-04-03
+14,18721,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-04-04
+14,18722,58,"Sample 59, Boston","Sample 59, Boston",1,FALSE,black,0.5,1,,2021-04-05
+32,18691,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-05
+32,18692,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-06
+29,18693,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-07
+32,18694,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-08
+32,18695,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-09
+33,18696,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-10
+33,18697,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-11
+29,18698,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-12
+31,18699,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-13
+33,18700,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-14
+29,18701,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-15
+31,18702,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-16
+33,18703,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-17
+33,18704,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-18
+26,18705,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-19
+29,18706,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-20
+26,18707,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-21
+26,18708,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-22
+21,18709,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-23
+21,18710,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-24
+22,18711,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-25
+22,18712,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-26
+22,18713,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-27
+22,18714,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-28
+22,18715,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-29
+22,18716,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-30
+28,18717,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-03-31
+29,18718,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-04-01
+29,18719,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-04-02
+21,18720,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-04-03
+21,18721,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-04-04
+21,18722,59,"Sample 60, Boston","Sample 60, Boston",1,FALSE,black,0.5,1,,2021-04-05

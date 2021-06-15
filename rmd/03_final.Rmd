@@ -224,10 +224,42 @@ ranking_over_time_widget <- girafe(ggobj = all_ranks_over_time,
 ranking_over_time_widget
 
 # we also save the widget as HTML:
-saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget.html"), selfcontained = FALSE)
-saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget-self_conntained.html"), 
+# saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget.html"), selfcontained = FALSE)
+saveWidget(ranking_over_time_widget, file = here::here("plots/ranking_over_time_widget-self_contained.html"), 
            selfcontained = TRUE)
 
+
+# save the data to re-plot with Datawrapper if necessary:
+data_ranking_over_time <- results
+gg_object <- ggplot_build(all_ranks_over_time)
+loess_data <- gg_object$data[[2]] 
+# %>% mutate(x_date = as.POSIXct(x, format = "%d%m%Y %H:%M:%S", origin = as.POSIXct("1970-01-01 00:00:00"))) # NOT WORKING
+# the data, but issue: 80 data points on other x-axis...
+# se, we just average the LOESS by day and lose precision...
+loess_data <- loess_data %>% 
+  select(x, y, ymin, ymax) %>%
+  mutate(y = abs(y),
+         x_date = round(x, 0)) %>%
+  group_by(x_date) %>%
+  mutate(avg_y = mean(y, na.rm = TRUE)) %>% 
+  ungroup() %>%
+  select(x_date, loess = avg_y)
+results_data <- gg_object$data[[1]] %>% mutate(y = abs(y), x_date = as.Date(x, origin = as.Date("1970-01-01"))) %>%
+  select(y, x, tooltip, x_date) %>%
+  pivot_wider(names_from = tooltip, values_from = y) %>%
+  left_join(loess_data, by = c("x" = "x_date"))
+
+rio::export(loess_data, here::here("proc_data", 'loess_data_chart1.csv'))
+rio::export(results_data, here::here("proc_data", 'results_data_chart1.csv'))
+
+
+# save high quality static PNG in last resort:
+ggsave(filename = here::here("plots/ranking_over_time.png"), 
+       plot = all_ranks_over_time,
+       width = 200,
+       height = 150, 
+       units = "mm",
+       dpi = 800)
 
 ```
 
