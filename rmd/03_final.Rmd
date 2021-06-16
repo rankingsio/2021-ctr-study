@@ -97,6 +97,8 @@ my_theme <- function(){
       plot.caption = element_text(color = "grey40",
                                   size = 0.9 * base_size),
       plot.caption.position = "plot",
+      strip.text = element_text(size =  base_size,
+                                  face = "bold"),
       axis.line.x = element_line(color = "black",
                                  size = .8),
       axis.line.y = element_line(color = "black",
@@ -149,26 +151,21 @@ results <- results %>%
 
 # Introduction 
 
-In this study, we want to test for the effect of increasing [Click-Through Rates](https://support.google.com/google-ads/answer/2615875?hl=en) (CTRs) on Google Search rankings.  
-We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increase the number of visits to randomly selected car accident lawyers' websites with a service provider and measure the impact on the rankings.  
+Does organic CTR impact SEO rankings? In this study, we want to answer this question and  test for the effect of increasing [Click-Through Rates](https://support.google.com/google-ads/answer/2615875?hl=en) (CTRs) on Google Search rankings.  
+We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increase the number of visits to randomly selected car accident lawyers’ websites and measure the impact on Google rankings.  
+By “artificially” increasing the number of searches and visits per day, we improve the CTR, which is considered a ranking factor. As background, [see Larry Kim's post](https://moz.com/blog/does-organic-ctr-impact-seo-rankings-new-data) for a captivating discussion on the issue.
 
-By “artificially” increasing the number of searches and visits per day, we improve the CTR and thus hypothesize that it will have a positive impact on the Google Search ranking. As background, ([see Larry Kim's post](https://moz.com/blog/does-organic-ctr-impact-seo-rankings-new-data)) for a captivating discussion of this issue.  
-
-The goals of this project are:
-
-1. To test if increasing the CTR does increase the ranking and measure the gain.
-2. To test if using a provider of organic traffic to increase your SEO (by increasing your CTR), in the particular case of personal injury lawyers, is effective. 
 
 
 # Methodology
 
-We register with [SERP Empire](https://www.serpempire.com), a current hype organic traffic provider. We launch a campaign for 60 selected personal injury lawyer's websites. Each campaign is "artificially" boosting the number of searches and clicks for the keyword “[_city_] car accident lawyer”. By doing so, we increase their CTR for 30 days. 
+We use [SERP Empire](https://www.serpempire.com) as our organic traffic provider. We launched campaigns for 60 selected personal injury lawyer’s websites. Each campaign is “artificially” boosting the number of searches and clicks for the keyword “[city] car accident lawyer”. By doing so, we increase their CTR for 30 days.  
 
 We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
 
-One of the major caveats of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost. We rely on the Google Search ranking provided by SERP Empire to assess its own efficacy.    
+One of the major caveats of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost..  
 
-Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect, however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting rankings.   
+Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect, however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting rankings.
 
 See also the [Detailed Methodology](#detailed-methodology) in the Annex.  
 
@@ -177,7 +174,7 @@ See also the [Detailed Methodology](#detailed-methodology) in the Annex.
 
 ## Ranking Over Time
 
-We start by visualizing the evolution of the rank of the 60 websites. Each line represents the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a LOESS regression ([locally estimated scatterplot smoothing](https://en.wikipedia.org/wiki/Local_regression)) with standard error and represent a smoothed average, similar to a moving average (but better).  
+We start by visualizing the evolution of the rank of the 60 websites. Each line represents the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a LOESS regression ([locally estimated scatterplot smoothing](https://en.wikipedia.org/wiki/Local_regression)) and represents a smoothed average, similar to a moving average (but better).  
 
 ```{r, fig.align='center', fig.height=5, out.width='80%'}
 
@@ -188,12 +185,14 @@ all_ranks_over_time <- results %>%
                             y = rank,
                             group = Sample_ID,
                             tooltip = label,
-                            data_id = label)
+                            data_id = label),
+                        color = "#888888",
+                        size = 0.4
   ) +
   geom_smooth(aes(x=date, y=rank),
               color = r_col,
-              size = 1,
-              se = TRUE) +
+              size = 1.5,
+              se = FALSE) +
   # geom_line(data = results %>% group_by(date) %>% summarize(avg = mean(rank, na.rm = TRUE)),
   #           aes(x=date, y=avg),
   #           color = r_col,
@@ -235,9 +234,9 @@ gg_object <- ggplot_build(all_ranks_over_time)
 loess_data <- gg_object$data[[2]] 
 # %>% mutate(x_date = as.POSIXct(x, format = "%d%m%Y %H:%M:%S", origin = as.POSIXct("1970-01-01 00:00:00"))) # NOT WORKING
 # the data, but issue: 80 data points on other x-axis...
-# se, we just average the LOESS by day and lose precision...
+# so, we just average the LOESS by day and lose precision...
 loess_data <- loess_data %>% 
-  select(x, y, ymin, ymax) %>%
+  select(x, y) %>%
   mutate(y = abs(y),
          x_date = round(x, 0)) %>%
   group_by(x_date) %>%
@@ -266,14 +265,14 @@ ggsave(filename = here::here("plots/ranking_over_time.png"),
 We observe the following: 
 
 * There is variability in the ranking of the websites, which will blurry the picture.
-* Some websites did see an increase in their ranking over the month, other a decrease.  
-* The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not dramatic. It seems to be around +2 positions.
+* Some websites did see an increase in their ranking over the month, others a decrease.  
+* The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not extreme. It seems to be around +2 positions.
 * Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases; the picture seems to stabilize. One potential explanation could be an update in Google's algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates), did not detect an update on March 19th or 18th (but an unconfirmed update on March 10th). It did however observe increased Google SERP fluctuations on March 13th and 14th. Another alternative explanation could be that two weeks is the time it has needed for the Google algorithm to capture and adjust to the boost in visits.    
 
 
 ## Day-to-day Fluctuations
 
-As we previously saw, there is a high variability in the rankings, even day to day. We can use an indexed line plot, all law firms finishing at 0 on April 5th, to show the fluctuations over time.  
+As we previously showed, there is a high variability in the rankings, even day to day. We can use an indexed line plot, all law firms finishing at 0 on April 5th, to show the fluctuations over time. On this chart, a sample starting on March 05 at an indexed rank of, let's say 5, gained 5 ranks during the study.    
 
 ```{r, fig.align='center', fig.height=5, out.width='80%'}
 
@@ -290,7 +289,9 @@ fluctuations <- results %>%
                             y = indexed_rank,
                             group = Sample_ID,
                             tooltip = label,
-                            data_id = label)
+                            data_id = label),
+                        color = "#888888",
+                        size = 0.4
   ) +
   my_theme() +
   scale_y_continuous(breaks = c(-10, -5, 0, 5, 10)) +
@@ -319,13 +320,21 @@ fluctuations_widget <- girafe(ggobj = fluctuations,
 fluctuations_widget
 
 
+# save data in wide format for Datawrapper:
+fluctuations_data <- results %>%
+  left_join(last_ranks) %>%
+  mutate(indexed_rank = rank - last_rank) %>%
+  select(date, label, indexed_rank) %>%
+  pivot_wider(names_from = label, values_from = indexed_rank)
+rio::export(fluctuations_data, here::here("proc_data", 'fluctuations_data_chart2.csv'))
+
 
 ```
 
 We observe again that:  
 
 * There are large fluctuations. Some websites saw a change of 10 ranks or more over the period. Several samples saw a change in the ranking larger than ±5 in a single day.  
-* The rankings seem to fluctuate less after March 19th. The variance of the ranking befor March 19th is around ±5. After it seems to be ±3.  
+* The rankings seem to fluctuate less after March 19th. The variance of the ranking for March 19th is around ±5. After that it seems to be ±3.  
 
 
 
@@ -371,23 +380,27 @@ results_augm_long <- results_augm %>%
 
 # a slopegraph
 slopegraph <- ggplot(data = results_augm_long) +
-  geom_line_interactive(aes(x = week, 
-                            y = average_rank, 
-                            group = Sample_ID, 
-                            tooltip = label_diff,
-                            data_id = label_diff)) +
+  # geom_line_interactive(aes(x = week,
+  #                           y = average_rank,
+  #                           group = Sample_ID,
+  #                           tooltip = label_diff,
+  #                           data_id = label_diff)) +
+  geom_line(aes(x = week,
+                y = average_rank,
+                group = Sample_ID),
+            size = 0.5) +
   my_theme() +
   scale_y_reverse(breaks = c(1,5,10,15,20,25,30)) +
   labs(
     title = "Average Rank in First and Last Week",
-    subtitle = "In pink, the average of all samples.\nHover on each line to highlight a particular sample."
+    subtitle = "In pink, the average of all samples."
   ) + 
   # average:
   geom_line(
     data = results_augm_long %>% group_by(week) %>% summarise(avg = mean(average_rank)),
     aes(x = week, y = avg, group = 1),
     color = r_col,
-    size = 1
+    size = 1.5
   ) +
   xlab("") +
   ylab("Average Rank") + 
@@ -419,7 +432,7 @@ ggsave(filename = here::here("plots/slopegraph.png"),
 
 ```
 
-This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms' websites have different fates. In particular two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
+This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms' websites have different fates. In particular, two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
 
 
 Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A **paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference is not equal to 0. In other words, we truly observed a non-zero, positive, increase during the study.  
@@ -430,7 +443,7 @@ ttest_result <- t.test(results_augm$first_week,
                        results_augm$last_week,
                        paired=TRUE,
                        # alternative = "greater" # two-sided and greater shows same result.
-                       ) 
+) 
 
 ttest_print <- tibble(
   `mean of the differences` = round(ttest_result$estimate, 3),
@@ -509,7 +522,8 @@ The Google Search ranking of the sample personal injury lawyer's websites can va
 
 Nevertheless, we observe a significant positive effect of +2 ranks, on average. This effect is larger for websites ranking initially lower (e.g. that appear on the third page of the search results).  
 
-There is an interesting pattern at 2 weeks after the start of the study. This is the day where the ranking increases and stabilizes for most of the websites. Two weeks could be the time it has needed for the Google algorithm to capture and adjust to the boost in visits.  
+There is an interesting pattern at 2 weeks after the start of the study. This is the day where the ranking increases and stabilizes for most of the websites. Two weeks could be the time it has needed for the Google algorithm to capture and adjust to the boost in visits. Alternatively, it could be the date where Google changed its algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates) did not detect an update on March 19th or 18th.  
+
 
 ## Discussion of the Limitation of the Study
 
@@ -555,21 +569,21 @@ Where:
 
 ```{r}
 SERP_features %>%
-  kbl(align=rep('c', 2)) %>%
-  kable_classic(full_width = F, font = 10)
+kbl(align=rep('c', 2)) %>%
+kable_classic(full_width = F, font = 10)
 # kable_styling(bootstrap_options = "condensed")
 ```
 
-* The $Multiplier$ is the how much we multiply the $\text{Estimated Daily Visits}$: 30.  
+* The $Multiplier$ is how much we multiply the $\text{Estimated Daily Visits}$: 30.  
 
 This is the study plan:  
 
 ```{r}
 study_plan %>%
-  kbl(align=rep('c', 2)) %>%
-  kable_classic(full_width = F, font = 10) %>%
-  column_spec(2:4, background = "#FAFAFA") %>%
-  column_spec(7:9, background = "#FAFAFA")
+kbl(align=rep('c', 2)) %>%
+kable_classic(full_width = F, font = 10) %>%
+column_spec(2:4, background = "#FAFAFA") %>%
+column_spec(7:9, background = "#FAFAFA")
 
 ```
 
@@ -596,7 +610,7 @@ From the SERP Empire dashboard, we manually collect the rank of each 60 website 
 
 A few comment on the data quality:   
 
-* Sample number 6 is removed from the analysis as the website could not be found by SERP Empire anymore for the majoritty of the study (from 2021-03-14).  
+* Sample number 6 is removed from the analysis as the website could not be found by SERP Empire anymore for the majority of the study (from 2021-03-14).  
 * There are a few websites who could not easily be found by SERP Empire, and needed to be modified. Thus, there are a few missing days at the beginning of the month for some samples.   
 * The initial ranking obtained from Ahrefs and that determined the CTR ranking factor is sometimes a bit different that the ranking on SERP Empire, which is to be expected. Nevertheless it is quite similar (it explains for instance why some websites ranked above the position 30).  
 * We boost the visits for one keyword only: "[_city_] car accident lawyer”
