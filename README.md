@@ -4,7 +4,8 @@ This is the Github repository for the CTR Study done for Rankings.io.
 
 :pencil: The full data report can be found [here](https://frontpagedata.com/ctr-study).  
 :hammer: The study was conducted with the statistical programming language R.  
-:bar_chart: [The code for the analysis and plots](https://github.com/frontpagedata/ctr-study/blob/master/rmd/03_final.Rmd).  
+:bar_chart: [The code for the analysis and plots](https://github.com/frontpagedata/ctr-study/blob/master/rmd/03_final.Rmd).   
+:page_facing_up: The collected data can be found [here](https://github.com/frontpagedata/ctr-study/blob/master/raw_data/results.csv), and the study plan [here](https://github.com/frontpagedata/ctr-study/blob/master/proc_data/Study_plan.csv)
  
 
 :sparkles: Contributors:  
