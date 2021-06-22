@@ -1,7 +1,9 @@
 ---
 title: "CTR study"
-author: "François Delavy and FrontPage Data for Rankings.io"
-date: "Last update: `r Sys.Date()`"
+author: |
+  | Lead: Chris Dreyer ([rankings.io](https://rankings.io/))
+  | Support: François Delavy & Daniel Kupka ([frontpagedata.com](https://frontpagedata.com/))
+date: "Last updated on `r Sys.Date()`"
 output:
   html_document:
     theme: paper
@@ -50,7 +52,10 @@ font-size: 18px;
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.showtext = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.showtext = TRUE,
+                      dpi = 720
+                      # dev = "svg" # for this report, using SVGs creates a much larger HTML! (75MB VS 3 MB)
+                      )
 knitr::knit_hooks$set(inline = function(x) {
   prettyNum(x, big.mark = ",", small.mark = ",", scientific = F)
 })
@@ -152,20 +157,20 @@ results <- results %>%
 # Introduction 
 
 Does organic CTR impact SEO rankings? In this study, we want to answer this question and  test for the effect of increasing [Click-Through Rates](https://support.google.com/google-ads/answer/2615875?hl=en) (CTRs) on Google Search rankings.  
-We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increase the number of visits to randomly selected car accident lawyers’ websites and measure the impact on Google rankings.  
+We focus on a particular niche: car accident lawyers (personal injury lawyers). We “artificially” increased the number of visits to randomly selected car accident lawyers’ websites and measured the impact on Google rankings.  
 By “artificially” increasing the number of searches and visits per day, we improve the CTR, which is considered a ranking factor. As background, [see Larry Kim's post](https://moz.com/blog/does-organic-ctr-impact-seo-rankings-new-data) for a captivating discussion on the issue.
 
 
 
 # Methodology
 
-We use [SERP Empire](https://www.serpempire.com) as our organic traffic provider. We launched campaigns for 60 selected personal injury lawyer’s websites. Each campaign is “artificially” boosting the number of searches and clicks for the keyword “[city] car accident lawyer”. By doing so, we increase their CTR for 30 days.  
+We use [SERP Empire](https://www.serpempire.com) as our organic traffic provider. We launched campaigns for 60 selected personal injury lawyers’ websites. Each campaign is “artificially” boosting the number of searches and clicks for the keyword “[city] car accident lawyer”. By doing so, we increase their CTR for 30 days.  
 
-We collect the position (Google Search ranking) of the website every day from the SERP Empire interface. We then analyze the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
+We collect the position (Google Search ranking) of the website daily from the SERP Empire interface. We then analyzed the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
 
-One of the major caveats of this study is that we use SERP Empire both to boost the number of visits and to measure the effect of this boost..  
+One of the major caveats of this study is that we used SERP Empire both to boost the number of visits and to measure the effect of this boost.  
 
-Finally, it is worth noting that the ranking of any website is expected to vary over time. And this, for reasons that are not controllable by this study. We expect, however, that we might see a general effect when looking at many websites. This is the reason why we collected 60 samples, from various cities and various starting rankings.
+Finally, it is worth noting that while the ranking of any website is expected to vary over time,we anticipate to see a possible impact when looking at many websites. This is the reason we collected 60 samples from a variety of cities and initial rankings.  
 
 See also the [Detailed Methodology](#detailed-methodology) in the Annex.  
 
@@ -174,7 +179,7 @@ See also the [Detailed Methodology](#detailed-methodology) in the Annex.
 
 ## Ranking Over Time
 
-We start by visualizing the evolution of the rank of the 60 websites. Each line represents the ranking of a personal injury lawyer's website for the keyword "car accident lawyer" over time. The pink line is a LOESS regression ([locally estimated scatterplot smoothing](https://en.wikipedia.org/wiki/Local_regression)) and represents a smoothed average, similar to a moving average (but better).  
+We started by visualizing the rank evolution of the 60 websites. Each line represents the ranking of a personal injury lawyer’s website for the keyword “car accident lawyer” over time. The pink line is a LOESS regression ([locally estimated scatterplot smoothing](https://en.wikipedia.org/wiki/Local_regression)) and represents a smoothed average, similar to a moving average but better.    
 
 ```{r, fig.align='center', fig.height=5, out.width='80%'}
 
@@ -262,17 +267,17 @@ ggsave(filename = here::here("plots/ranking_over_time.png"),
 
 ```
 
-We observe the following: 
+We observed the following: 
 
-* There is variability in the ranking of the websites, which will blurry the picture.
-* Some websites did see an increase in their ranking over the month, others a decrease.  
+* There is variability in the ranking of the websites, which will blur the picture.   
+* Some websites did see an increase in their ranking over the month. Others saw a decrease.    
 * The smoothed average is increasing slightly, but the effect of boosting the visits for one month for one keyword is not extreme. It seems to be around +2 positions.
-* Something seems to have happened at around 2 weeks in the study (around March 19th). There is a small jump in the ranking for many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases; the picture seems to stabilize. One potential explanation could be an update in Google's algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates), did not detect an update on March 19th or 18th (but an unconfirmed update on March 10th). It did however observe increased Google SERP fluctuations on March 13th and 14th. Another alternative explanation could be that two weeks is the time it has needed for the Google algorithm to capture and adjust to the boost in visits.    
+* Something seems to have happened at around week 2 in the study (approximately March 19th). There is a small jump in the ranking of many websites, forming a visible pattern. Also, it seems that the variance of the ranking decreases. The picture seems to stabilize. One potential explanation could be an update in Google’s algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates) did not detect an update on March 18th or 19th (but an unconfirmed update on March 10th). It did, on the other hand, observe increased Google SERP fluctuations on March 13th and 14th. Another alternative explanation could be that two weeks is the time needed for the Google algorithm to capture and adjust to the boost in visits.     
 
 
 ## Day-to-day Fluctuations
 
-As we previously showed, there is a high variability in the rankings, even day to day. We can use an indexed line plot, all law firms finishing at 0 on April 5th, to show the fluctuations over time. On this chart, a sample starting on March 05 at an indexed rank of, let's say 5, gained 5 ranks during the study.    
+As we previously showed, there is a high variability in the rankings, even at the daily level. We can use an indexed line plot withall law firms finishing at 0 on April 5th to show the fluctuations over time. On this chart, a sample starting on March 5th at an indexed rank of, let’s say 5, gained five ranks during the study.      
 
 ```{r, fig.align='center', fig.height=5, out.width='80%'}
 
@@ -331,16 +336,16 @@ rio::export(fluctuations_data, here::here("proc_data", 'fluctuations_data_chart2
 
 ```
 
-We observe again that:  
+We observed again that:  
 
-* There are large fluctuations. Some websites saw a change of 10 ranks or more over the period. Several samples saw a change in the ranking larger than ±5 in a single day.  
+* There are large fluctuations. Some websites saw a change of 10 ranks or more over the period. Several samples saw a difference in the ranking larger than ±5 in a single day.  
 * The rankings seem to fluctuate less after March 19th. The variance of the ranking for March 19th is around ±5. After that it seems to be ±3.  
 
 
 
 ## Comparing First Week to Last Week
 
-We saw previously that there is variability in the ranking. Thus, we will compute the improvement in the ranking by comparing the average rank in the first week of the study to the average rank in the last week of the study, in order to obtain more stable estimates.  
+We saw previously that there is variability in the ranking. Thus, we will compute the rank improvement  by comparing the average rank in the first week of the study to the average rank in the last week of the study in order to obtain more stable estimates.    
 
 
 ```{r, fig.align='center', fig.height=5, out.width='80%'}
@@ -432,10 +437,10 @@ ggsave(filename = here::here("plots/slopegraph.png"),
 
 ```
 
-This slopegraph is very useful to highlight the difference in ranking between the first week and last week for all the sample websites. Again, we observe that the law firms' websites have different fates. In particular, two are plunging. Globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.   
+This slopegraph is very useful to highlight the difference in ranking between the first week and the last week for all the sample websites. Again, we observe that the law firms’ websites have different fates. But globally, there is nevertheless an increase of 2 ranks in the Google Search ranking.     
 
 
-Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites), or is likely a "true" effect that would show again if we were to repeat the experiment. A **paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. We reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: true difference is not equal to 0. In other words, we truly observed a non-zero, positive, increase during the study.  
+Because we collected several samples (60), we can test if this difference is likely due to chance (explained by intrinsic variability in the ranking of websites) or is likely a “true” effect that would show again if we were to repeat the experiment. **A paired t-test** comparing the average ranking of each law firm during the first week and last week **shows that the difference is statistically significant**. Thus, we reject the null hypothesis that the difference in mean between the first week and last week is zero in favor of the alternative hypothesis: the true difference is not equal to 0. In other words, we indeed observed a non-zero, positive increase during the study.   
 
 ```{r, echo = FALSE}
 
@@ -514,15 +519,15 @@ ggplot(data = results_augm_long) +
 
 ```
 
-The positive effect is, maybe without surprise, stronger for websites that started on the third page (+3 rank on average, only +1 for those that started already on the first page).
+The positive effect is, maybe without surprise, more substantial for websites that started on the third page (+3 rank on average, only +1 for those that started already on the first page).  
 
 # Conclusion
 
-The Google Search ranking of the sample personal injury lawyer's websites can vary day to day from a few ranks. Not all the websites have their ranking increasing after a month of boosting their daily number of visits after a Google Search for the keyword "car accident lawyer".  
+The Google Search ranking of the sample personal injury lawyers’ websites can vary a few ranks daytoday. Not all the websites experienced a rank increase after a month of boosting their daily number of visits after a Google Search for the keyword “car accident lawyer”.    
 
-Nevertheless, we observe a significant positive effect of +2 ranks, on average. This effect is larger for websites ranking initially lower (e.g. that appear on the third page of the search results).  
+Nevertheless, we observe a significant positive effect of +2 ranks, on average. Moreover, this effect is larger for websites ranking initially lower (e.g., those that appear on the third page of the search results).    
 
-There is an interesting pattern at 2 weeks after the start of the study. This is the day where the ranking increases and stabilizes for most of the websites. Two weeks could be the time it has needed for the Google algorithm to capture and adjust to the boost in visits. Alternatively, it could be the date where Google changed its algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates) did not detect an update on March 19th or 18th.  
+There is an interesting pattern at week 2 after the start of the study. This is  when the ranking increases and stabilizes for most of the websites. Two weeks could be the time needed for the Google algorithm to capture and adjust to the boost in visits. Alternatively, it could be the date where Google changed its algorithm. However, the [Rank Risk Index of RankRanger](https://www.rankranger.com/google-algorithm-updates) did not detect an update on March 18th or 19th.  
 
 
 ## Discussion of the Limitation of the Study
@@ -531,30 +536,29 @@ This study has a few limitations.
 
 First, we increased the number of visits for only one keyword of interest ("car accident lawyer"). However, it is arguably the most important keyword, and we multiply the estimated number of daily visits by 30 (minus a bounce rate of 50%).   
 
-Second, we could not build a control group where we would not boost the number of visits, as SERP Empire does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower...  
+Second, we could not build a control group where we would not boost the number of visits, as SERP Empire does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower.  
 
-Third, we use SERP Empire to both boost the effect and measure the effect. We thus rely on SERP Empire's own Google Search ranking to assess their tool. There is, however, to our knowledge, no reason to not trust SERP Empire's Google Search ranking measurements.  
+Third, we use SERP Empire to both boost  and measure the impact. We thus rely on SERP Empire’s own Google Search ranking to assess their tool. We see, however, no reason to not trust SERP Empire’s Google Search ranking measurements.  
 
-Finally, we acknowledge that the results of this study are specific to the samples and parameters chosen: personal injury lawyer's websites, "car accident lawyer" as the keyword, a calibrated boost of 30 times the estimated number of daily visits, the SERP Empire parameters chosen, the traffic provider bots (SERP Empire), etc., and are thus not easily generalizable.  
-
+Finally, we acknowledge that the results of this study are specific to the samples and parameters chosen: personal injury lawyers’ websites, “car accident lawyer” as the keyword, a calibrated boost of 30 times the estimated number of daily visits, the SERP Empire parameters chosen, and the traffic provider bots (SERP Empire), etc., are thus not easily generalizable.  
 
 # Annex
 
 ## Detailed Methodology
 
-### Websites Selection
+### Website Selection
 
-We select 3 personal injury lawyers in 20 U.S. cities. We randomly picked one website appearing in the first page, second page and third page of the results of a Google search with the keywords “[_city_] car accident lawyer”. We use [Ahrefs Keyword Explorer](https://ahrefs.com/keywords-explorer) for this selection. We only select websites that appeared in the first to third page of the Google Search results (according to Ahrefs), because SERP Empire does only collects the results of the first 3 pages. In the end, we obtain a sample of 60 personal injury lawyer websites in various cities and with various Google Search positions. 
+We selected 3 personal injury lawyers in 20 U.S. cities. Then, we randomly picked one website appearing on the first page, second page and third page of the results of a Google search with the keywords “[city] car accident lawyer”. We use [Ahrefs Keyword Explorer](https://ahrefs.com/keywords-explorer) for this selection. We only select websites that appeared on the first to the third page of the Google Search results (according to Ahrefs), because SERP Empire  only collects the results of the first 3 pages. In the end, we obtained a sample of 60 personal injury lawyer websites in various cities and with different Google Search positions.   
 
 ### Boosting Calibration
 
-We want to give each website a comparable boost in visits, and a boost that looks organic. If we gave the same boost to the personal injury website ranking 2nd in a large city where there is a lot of competition, let's say LA, to the website ranking 28th in Fresno, we would run into two problems. First, the comparative size of the boost will be extremely different: insignificant for the top personal injury lawyer's website in LA, but oversized for the lower ranking website in Fresno. Second, the boost in Fresno will not look "organic" and would likely be detected by Google as not being _real_ organic traffic on the website and discarded.   
+We wanted to give each website a comparable boost in visits that looked organic. If we delivered the same boost to the personal injury website ranking 2nd in a large city where there is a lot of competition, let’s say LA, to the website ranking 28th in Fresno, we would run into two problems. First, the comparative size of the boost would be extremely different: insignificant for the top personal injury lawyer’s website in LA, but oversized for the lower ranking website in Fresno. Second, the boost in Fresno would not look “organic” and would likely be detected by Google as not being _real_ organic traffic on the website and be discarded.     
 
 Therefore, we calibrate the boost in visits to an _estimated number of daily visits_ for each website. Here is how we do it: 
 
-1. We multiply the _average number of daily searches_ in a city for the keywords “[_city_] car accident lawyer”, computed from the monthly volume on Google Ads, to the expected CTR of the website, computed from is Google search ranking (provided by Ahref) to a _ranking CTR factor_ (provided by the [Google Organic CTR History](https://www.advancedwebranking.com/ctrstudy/) of Advanced Web Ranking). This _ranking CTR factor_ provides an estimation of the CTR in function of the position in the Google Search results. Indeed, a website ranking first is much more likely to be visited than a website ranking lower. By doing so, we get the number of _estimated daily visits_.  
+1. We multiply the _average number of daily searches_ in a city for the keywords “[_city_] car accident lawyer”, computed from the monthly volume on Google Ads, to the expected CTR of the website, computed from is Google search ranking (provided by Ahref) to a _ranking CTR factor_ (provided by the [Google Organic CTR History](https://www.advancedwebranking.com/ctrstudy/) of Advanced Web Ranking). This _ranking CTR factor_ estimates the CTR in the relation to the position in the Google Search results. Indeed, a website ranking first is much more likely to be visited than a website ranking lower. By doing so, we get the number of _estimated daily visits_.  
 
-2. Then, we multiply the _estimated daily visits_ to a common _multiplier_, this is the "boost", to obtain the calibrated number of daily keywords searches that we will add to each website with SERP Empire.
+2. Then, we multiply the _estimated daily visits_ to a common _multiplier_, the “boost”, to obtain the calibrated number of daily keyword searches that we will add to each website with SERP Empire.
 
 In short, for each website:
 
@@ -563,9 +567,9 @@ In short, for each website:
 
 Where:   
 
-* $\text{Ranking CTR factor} = \text{current ranking} * \text{CTR estimate from Google Organic CTR History study}$.  
+* $\text{Ranking CTR factor} = \text{current ranking} * \text{CTR estimate from Google Organic CTR History study}$  
 * ${Daily Searches for keyword in city}$ is computed from Google Ads monthly volume for the keyword "[_city_] car accident lawyer"
-* $\text{CTR estimate from Google Organic CTR History study}$ is the obtained from the _Organic + Local Pack_ ([source](https://www.advancedwebranking.com/ctrstudy/)) and is:  
+* $\text{CTR estimate from Google Organic CTR History study}$ is obtained from the _Organic + Local Pack_ ([source](https://www.advancedwebranking.com/ctrstudy/)) and is:  
 
 ```{r}
 SERP_features %>%
@@ -574,7 +578,7 @@ kable_classic(full_width = F, font = 10)
 # kable_styling(bootstrap_options = "condensed")
 ```
 
-* The $Multiplier$ is how much we multiply the $\text{Estimated Daily Visits}$: 30.  
+* The $Multiplier$ is how much we multiply the $\text{Estimated Daily Visits}$: 30  
 
 This is the study plan:  
 
@@ -587,32 +591,32 @@ column_spec(7:9, background = "#FAFAFA")
 
 ```
 
-How to read the study plan, for instance for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend on the ranking, to obtain the _estimated number of daily click_ for the sample 1. We multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website everyday.  
+How to read the study plan, for instance, for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend on the ranking, to obtain the _estimated number of daily clicks_ for the sample 1. Then, we multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website daily.    
 
 ### SERP Empire Parameters
 
-We use the traffic provider SERP Empire to visits our 60 sampled websites the number of day indicated in the column _Number of Daily Searchs on SERP Empire_ on the study plan above. To make the traffic look more organic, SERP Empire bots will vary their exact number of visits around this average.  
+We use the traffic provider SERP Empire to visit our 60 sampled websites the number of days indicated in the column _Number of Daily Searches on SERP Empire_ on the study plan above. SERP Empire bots will vary their exact number of visits around this average to make the traffic look more organic.   
 
-In addition, we use the following SERP Empire parameters:  
+In addition, we used the following SERP Empire parameters:  
 
 * The country and region are specified
 * 50% of mobile searches
-* 2 pages per session
+* Two pages per session
 * Average session duration: 60 seconds
 * Bounce Rate: 50%
 
-We boost the daily visits of the websites for 1 month.  
+We boost the daily visits of the websites for one month.  
 
 
 ### Data Collection and Quality
 
-From the SERP Empire dashboard, we manually collect the rank of each 60 website everyday.  
+From the SERP Empire dashboard, we manually collect the rank of each of the 60 websites every day.  
 
-A few comment on the data quality:   
+A few comments on the data quality:   
 
-* Sample number 6 is removed from the analysis as the website could not be found by SERP Empire anymore for the majority of the study (from 2021-03-14).  
-* There are a few websites who could not easily be found by SERP Empire, and needed to be modified. Thus, there are a few missing days at the beginning of the month for some samples.   
-* The initial ranking obtained from Ahrefs and that determined the CTR ranking factor is sometimes a bit different that the ranking on SERP Empire, which is to be expected. Nevertheless it is quite similar (it explains for instance why some websites ranked above the position 30).  
-* We boost the visits for one keyword only: "[_city_] car accident lawyer”
+* Sample number 6 is removed from the analysis as the website could no longer be found by SERP Empire for the majority of the study (from 2021-03-14).    
+* There are a few websites that could not easily be found by SERP Empire and needed to be modified. Thus, there are a few missing days at the beginning of the month for some samples.   
+* The initial ranking obtained from Ahrefs determined the CTR ranking factor is sometimes a bit different from the ranking on SERP Empire, which is to be expected. Nevertheless, it is quite similar (it explains, for instance, why some websites ranked above  position 30).
+* We boost the visits for one keyword only: “[city] car accident lawyer”.
 
 
