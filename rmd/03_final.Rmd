@@ -164,13 +164,13 @@ By “artificially” increasing the number of searches and visits per day, we i
 
 # Methodology
 
-We use [SERP Empire](https://www.serpempire.com) as our organic traffic provider. We launched campaigns for 60 selected personal injury lawyers’ websites. Each campaign is “artificially” boosting the number of searches and clicks for the keyword “[city] car accident lawyer”. By doing so, we increase their CTR for 30 days.  
+We launched campaigns for 60 selected personal injury lawyers’ websites with an organic traffic provider. Each campaign is “artificially” boosting the number of searches and clicks for the keyword “[city] car accident lawyer”. By doing so, we increase their CTR for 30 days.  
 
-We collect the position (Google Search ranking) of the website daily from the SERP Empire interface. We then analyzed the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
+We collect the position (Google Search ranking) of the website daily from the traffic provider's interface. We then analyzed the position of each website throughout the study to assess the strength of the effect and effectiveness of using a traffic provider.  
 
-One of the major caveats of this study is that we used SERP Empire both to boost the number of visits and to measure the effect of this boost.  
+One of the major caveats of this study is that we used the traffic provider both to boost the number of visits and to measure the effect of this boost. This means that we were not able to have a control group.     
 
-Finally, it is worth noting that while the ranking of any website is expected to vary over time,we anticipate to see a possible impact when looking at many websites. This is the reason we collected 60 samples from a variety of cities and initial rankings.  
+Finally, it is worth noting that while the ranking of any website is expected to vary over time, we anticipate to see a possible impact when looking at many websites. This is the reason we collected 60 samples from a variety of cities and initial rankings.  
 
 See also the [Detailed Methodology](#detailed-methodology) in the Annex.  
 
@@ -285,9 +285,17 @@ last_ranks <- results %>%
   filter(date == "2021-04-05") %>%
   select(Sample_ID, last_rank = rank)
 
+first_ranks <- results %>% 
+  group_by(Sample_ID) %>%
+  mutate(first_rank = dplyr::first(na.omit(rank))) %>%
+  select(Sample_ID, first_rank) %>%
+  distinct()
+
 fluctuations <- results %>%
-  left_join(last_ranks) %>%
-  mutate(indexed_rank = rank - last_rank) %>%
+  # left_join(last_ranks) %>%
+  # mutate(indexed_rank = rank - last_rank) %>%
+  left_join(first_ranks) %>%
+  mutate(indexed_rank = first_rank - rank) %>%
   ggplot() +
   # geom_line(aes(x=date, y=indexed_rank, group=Sample_ID), alpha = 0.8) +
   geom_line_interactive(aes(x = date,
@@ -310,10 +318,11 @@ fluctuations <- results %>%
   ) +
   labs(
     title = "Fluctuations of the Rankings Over Time" ,
-    subtitle = "The rankings are indexed to the last ranking of each sample,\nshowing the variety of trajectories leading to the final rank."
+    # subtitle = "The rankings are indexed to the last ranking of each sample,\nshowing the variety of trajectories leading to the final rank."
+    subtitle = "The rankings are indexed to the first ranking of each sample,\nshowing the variety of trajectories leading to the final rank."
   ) +
   xlab("Date") +
-  ylab("Rank, indexed to Apr. 05")
+  ylab("Rank Gain\nindexed to start day")
 
 fluctuations_widget <- girafe(ggobj = fluctuations,
                               options = list(
@@ -327,8 +336,10 @@ fluctuations_widget
 
 # save data in wide format for Datawrapper:
 fluctuations_data <- results %>%
-  left_join(last_ranks) %>%
-  mutate(indexed_rank = rank - last_rank) %>%
+  # left_join(last_ranks) %>%
+  # mutate(indexed_rank = rank - last_rank) %>%
+  left_join(first_ranks) %>%
+  mutate(indexed_rank = first_rank - rank) %>%
   select(date, label, indexed_rank) %>%
   pivot_wider(names_from = label, values_from = indexed_rank)
 rio::export(fluctuations_data, here::here("proc_data", 'fluctuations_data_chart2.csv'))
@@ -491,7 +502,7 @@ results_augm_long <- results_augm_long %>%
   ungroup()
 
 
-ggplot(data = results_augm_long) +
+slopegraph_by_page <- ggplot(data = results_augm_long) +
   geom_line(aes(x = week, 
                 y = average_rank, 
                 group = Sample_ID)) +
@@ -516,6 +527,16 @@ ggplot(data = results_augm_long) +
   scale_x_discrete(labels=c("first_week" = "First Week", "last_week" = "Last Week")) +
   facet_wrap(vars(start_page), ncol = 3)
 
+slopegraph_by_page
+
+
+ggsave(filename = here::here("plots/slopegraph_by_page.png"), 
+       plot = slopegraph_by_page,
+       width = 200,
+       height = 130, 
+       units = "mm",
+       dpi = 800)
+
 
 ```
 
@@ -536,11 +557,11 @@ This study has a few limitations.
 
 First, we increased the number of visits for only one keyword of interest ("car accident lawyer"). However, it is arguably the most important keyword, and we multiply the estimated number of daily visits by 30 (minus a bounce rate of 50%).   
 
-Second, we could not build a control group where we would not boost the number of visits, as SERP Empire does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower.  
+Second, we could not build a control group where we would not boost the number of visits, as the traffic provider does not allow tracking the ranking of websites without visiting them. However, ranking is a zero-sum game. So if our observed samples ranked +2 positions higher (on average), it means that other websites must have ranked lower.  
 
-Third, we use SERP Empire to both boost  and measure the impact. We thus rely on SERP Empire’s own Google Search ranking to assess their tool. We see, however, no reason to not trust SERP Empire’s Google Search ranking measurements.  
+Third, we use a traffic provider to both boost and measure the impact. We thus rely on its own Google Search ranking to assess the tool. We see, however, no reason to not trust the traffic provider Google Search ranking measurements.  
 
-Finally, we acknowledge that the results of this study are specific to the samples and parameters chosen: personal injury lawyers’ websites, “car accident lawyer” as the keyword, a calibrated boost of 30 times the estimated number of daily visits, the SERP Empire parameters chosen, and the traffic provider bots (SERP Empire), etc., are thus not easily generalizable.  
+Finally, we acknowledge that the results of this study are specific to the samples and parameters chosen: personal injury lawyers’ websites, “car accident lawyer” as the keyword, a calibrated boost of 30 times the estimated number of daily visits, and the traffic provider parameters and bots, etc., are thus not easily generalizable.  
 
 # Annex
 
@@ -548,7 +569,7 @@ Finally, we acknowledge that the results of this study are specific to the sampl
 
 ### Website Selection
 
-We selected 3 personal injury lawyers in 20 U.S. cities. Then, we randomly picked one website appearing on the first page, second page and third page of the results of a Google search with the keywords “[city] car accident lawyer”. We use [Ahrefs Keyword Explorer](https://ahrefs.com/keywords-explorer) for this selection. We only select websites that appeared on the first to the third page of the Google Search results (according to Ahrefs), because SERP Empire  only collects the results of the first 3 pages. In the end, we obtained a sample of 60 personal injury lawyer websites in various cities and with different Google Search positions.   
+We selected 3 personal injury lawyers in 20 U.S. cities. Then, we randomly picked one website appearing on the first page, second page and third page of the results of a Google search with the keywords “[city] car accident lawyer”. We use [Ahrefs Keyword Explorer](https://ahrefs.com/keywords-explorer) for this selection. We only select websites that appeared on the first to the third page of the Google Search results (according to Ahrefs), because [SERP Empire](https://www.serpempire.com), our traffic provider, only collects the results of the first 3 pages. In the end, we obtained a sample of 60 personal injury lawyer websites in various cities and with different Google Search positions.   
 
 ### Boosting Calibration
 
@@ -593,9 +614,9 @@ column_spec(7:9, background = "#FAFAFA")
 
 How to read the study plan, for instance, for the first personal injury lawyer in San Antonio: We multiply the baseline number of daily searches in San Antonio for the keyword to the CTR, which depend on the ranking, to obtain the _estimated number of daily clicks_ for the sample 1. Then, we multiply this number by our multiplier to obtain the number of visits that we will pay SERP Empire to do on this website daily.    
 
-### SERP Empire Parameters
+### Traffic Provider Parameters
 
-We use the traffic provider SERP Empire to visit our 60 sampled websites the number of days indicated in the column _Number of Daily Searches on SERP Empire_ on the study plan above. SERP Empire bots will vary their exact number of visits around this average to make the traffic look more organic.   
+We use the traffic provider [SERP Empire](https://www.serpempire.com) to visit our 60 sampled websites the number of days indicated in the column _Number of Daily Searches on SERP Empire_ on the study plan above. SERP Empire bots will vary their exact number of visits around this average to make the traffic look more organic.   
 
 In addition, we used the following SERP Empire parameters:  
 
