@@ -507,8 +507,9 @@ slopegraph_by_page <- ggplot(data = results_augm_long) +
                 y = average_rank, 
                 group = Sample_ID)) +
   labs(
-    title = "The Positive Effect Is Larger for Lower Ranking Websites",
-    subtitle = "In pink, the average."
+    title = "Where You Start Matters: Performance of Websites on Page 1, 2, and 3. 
+",
+    subtitle = "The average in pink."
   ) + 
   # average:
   geom_line(
